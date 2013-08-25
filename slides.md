@@ -282,7 +282,7 @@ title: New Idea
 subtitle: Markov-switching Autoregressive Model
 
 <div style="margin-top:-80px; float:right;">
-<video width="500" height="500" controls>
+<video width="500" height="500" controls autoplay loop>
   <source src="videos/MSARMvsHMM.mp4" type="video/mp4">
   <source src="videos/MSARMvsHMM.ogg" type="video/ogg">
 Your browser does not support the video tag.
