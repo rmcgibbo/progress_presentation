@@ -1,0 +1,449 @@
+<!--
+slidedeck: A modification of the Google IO 2012 HTML5 slide template
+URL: https://github.com/rmcgibbo/slidedeck
+
+Based on https://github.com/francescolaffi/elastic-google-io-slides, and
+ultimately:
+
+Google IO 2012 HTML5 Slide Template
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahe <lukem@google.com>
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Modeling Conformational Dynamics</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+   <link rel="shortcut icon" href=" http://www.stanford.edu/favicon.ico"/> 
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="all" href="theme/css/custom.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+
+  <!-- MathJax support  -->
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    showProcessingMessages: false,
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+<slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+
+    <h1> Modeling Conformational Dynamics</h1>
+    <h2> Second Year Progress Report</h2>
+    <p> Robert McGibbon<br/> August 27, 2013</p>
+  </hgroup>
+</slide>
+
+
+<slide  >
+  
+    <hgroup>
+      <h2>Overview</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><div style="float:right; margin-top:-20px">
+  <img height=190px src="figures/folding-mosaic.jpg"/>
+  <img height=210px src="figures/hingeloss.png"/>
+  <br/>
+  <img height=200px style="padding-top:10px;" src="figures/msmaccelerator.png"/>
+</div>
+
+<ul>
+<li>Motivation</li>
+<li>Improving MSM construction with large-margin metric learning</li>
+<li>Current projects and future directions<ul>
+<li>Adaptive sampling</li>
+<li>Statistical model selection</li>
+<li>Richer model classes</li>
+</ul>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Biology at the Atomic Length Scale</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><center><img height=400  src="figures/U1CP1-1_SizeScale_ksm.jpg" /></center>
+<footer class="source"> http://www.nature.com/scitable/topicpage/what-is-a-cell-14023083</footer></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Biology at the Atomic Length Scale</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><center>
+<table><tr>
+  <td> <img height=200 src="figures/Mallacci-Brain-122-1823-1999-image.png"/> </td>
+  <td> <img width=600 src="figures/Mallacci-Brain-122-1823-1999-title.png"/> </td>
+</tr></table>
+<img width=500 src="figures/Alanine-Valine.png"/>
+</center></p>
+<footer class="source">
+G.R Mallacci et. al., Brain 122, 1823 (1999).
+</footer></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Molecular Dynamics</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><center>
+<img style="float:left;" height=400 src="figures/vdw-protein-water.png"/>
+<div style="margin:5  0px">
+  <img height=150 src="figures/amber-functional-form.png"/>
+</div>
+</center></p>
+<ul>
+<li>Calculate the physical interactions in the system.</li>
+<li>Numerically integrate the equations of motion.</li>
+</ul>
+<footer class="source">
+W. D. Cornell et. al., J. Am. Chem. Soc. 117, 5179 (1995).
+</footer></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>MD Datasets are Large</h2>
+      <h3>First world problems</h3>
+    </hgroup>
+    <article ><p><center>
+<img height=200 src="figures/5348951193_b53fa19c23.jpg"/>
+<img width=250 style="margin-left:20px; margin-right:20px" src="figures/TitanNew-bg.jpg"/>
+<img height=200 src="figures/folding-mosaic.jpg"/>
+</center></p>
+<ul>
+<li>$100 \frac{\text{ns}}{\text{day } \cdot \text{ GPU}} \cdot 500 \text{ GPUs} \cdot 1 \text{ week} = 350 \text{ $\mu$s}$</li>
+<li>Storing the positions every 200 ps, this is a $\sim$ 1 TB dataset.</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Predictive and interpretable models from atomic-level simulations</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul class="build">
+<li>What are the relevant conformational states?</li>
+<li>
+<p>What are the characteristic dynamics between them?</p>
+</li>
+<li>
+<p>States are a Voronoi tessellation of conformation space $$s_i = \lbrace x \in \Omega : d(x, y_i) \lt d(x, y_j) \;\forall\; j \in S, j \neq i \rbrace $$</p>
+</li>
+<li>Dynamics are Markovian through state space $$P(s_t | s_{t-1}, s_{t-2}, \ldots) = P(s_t | s_{t-1})$$</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="segue dark nobackground" >
+  
+    <!-- <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside> -->
+    <hgroup class="auto-fadein">
+      <h2>Improving Markov State Model Construction</h2>
+      <h3>"Learning Kinetic Distance Metrics", JCTC (2013)</h3>
+    </hgroup>
+  
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>MSMs have Competing Sources of Error</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>The MSM state decomposition, a <em>clustering</em>, is characterized by a bias-variance trade off.</p>
+<ul>
+<li><strong>Bias:</strong> Lowering the number of states introduces systematic error in the model's dynamics.</li>
+<li>Hamiltonian mechanics is perfectly Markovian in $\mathbb{R}^{6N}$</li>
+<li><strong>Variance:</strong> Raising the number of states increases statistical noise in the model's dynamics.</li>
+<li>How do we balance this trade off and avoid overfitting?</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Choosing the States' Shape</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><div style="margin-top:50px; float: right;">
+<img height=300 src=figures/gpcr_activation.png />
+</div>
+
+<ul>
+<li>Conformational change is characterized by slow <em>conformationally subtle</em>
+  transitions.</li>
+<li>To resolve these transitions in our models, our states need to be "smaller".</li>
+<li>We can save our statistics by picking their <strong>shape</strong> more intelligently.</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Large-Margin Classification</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><img style="float:right" height=250 src=figures/hingeloss.png /></p>
+<ul>
+<li>Goal of the distance metric for clustering is to distinguish <em>kinetically</em>-close
+  from <em>kinetically</em>-far pairs of conformations. </li>
+<li>Large-margin learning theory: reduce generalization error by separating the
+  two classes as far as possible.</li>
+</ul>
+<p>$$ \max_{\mathbf{X},\rho} \left[ \alpha \rho - \frac{1}{N} \sum_i^N \lambda_\text{huber} \left(d^\mathbf{X}(\vec{a}_i,\vec{c}_i) - d^\mathbf{X}(\vec{a}_i, \vec{b}_i) - \rho \right) \right] $$</p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Optimization and Constraints</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>$$ d^{\mathbf{X}}(\vec{a}, \vec{b}) = (\vec{a} - \vec{b})^{T} \mathbf{X} (\vec{a} - \vec{b}) $$</p>
+<p>$$ \max_{\mathbf{X},\rho} \left[ \alpha \rho - \frac{1}{N} \sum_i^N \lambda \left(d^\mathbf{X}(\vec{a}_i,\vec{c}_i) - d^\mathbf{X}(\vec{a}_i, \vec{b}_i) - \rho \right) \right] $$</p>
+<ul>
+<li>The matrix $\mathbf{X}$ is constrained to be positive semidefinite.</li>
+<li>Relatively efficient optimization by gradient descent with rank-1 updates naturally maintains p.s.d. constraint.</li>
+</ul>
+<footer class="source">Shen, C.; Kim, J.; Wang, L. Scalable large-margin Mahalanobis distance metric learning. IEEE Trans. Neural Networks 2010, 21, 1524–1530</footer></article>
+ 
+</slide>
+
+<slide class="img-top-center" >
+  
+    <hgroup>
+      <h2>KDML Model System</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><img height=350 src="figures/toy_microstates.png" /></p>
+<p>2D Brownian dynamics, where vertical diffusion constant is 10x greater than the horizontal diffusion constant.</p>
+<footer class="source">McGibbon, R. T.; Pande, V. S.; J. Chem. Theory Comput., 9 2900 (2013) 10.1021/ct400132h </footer></article>
+ 
+</slide>
+
+<slide class="img-top-center" >
+  
+    <hgroup>
+      <h2>KDML Model System</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><img height=350 src="figures/timescales.png" /></p>
+<p>KDML distance metric gives converged behavior with fewer states.</p>
+<footer class="source">McGibbon, R. T.; Pande, V. S.; J. Chem. Theory Comput., 9 2900 (2013) 10.1021/ct400132h </footer></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Fip35 WW Domain</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><table><tr>
+<td><img height=250 src="figures/bars.png" /></td>
+<td><img height=250 src="figures/state12.png" /></td>
+</tr></table>
+
+<ul>
+<li>The folding timescale is remarkably robust to changes in the distance metric.</li>
+<li>New timescales are observed in the 100 ns - 1 μs regime, corresponding to near-native hydrogen bond reorganizations in the turns.</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="segue dark nobackground" >
+  
+    <!-- <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside> -->
+    <hgroup class="auto-fadein">
+      <h2>Future Directions</h2>
+      <h3>Adaptive sampling, model selection, statistical learning.</h3>
+    </hgroup>
+  
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Current projects</h2>
+      <h3>MSM-accelerated Distributed Molecular Dynamics</h3>
+    </hgroup>
+    <article ><div style="margin-top:-120px; float:right;">
+<table>
+<tr><td> <img height=150 src="figures/muller.png" /> </td></tr>
+<tr><td> <img  height=150 src="figures/villin.native.png" /> </td></tr>
+<tr><td> <img  height=150 src="figures/HIV1-cropped.png" /> </td></tr>
+</table>
+</div>
+
+<ul>
+<li>Node-parallelism is the present and future of computing. We must exploit ergodic theorem.</li>
+<li>MSMAccelerator: cluster based client-server architecture over ZeroMQ. </li>
+<li>Runs simulations with OpenMM &amp; AMBER.</li>
+<li>Starting conditions determined on-the-fly by MSMBuilder.</li>
+</ul>
+<footer class="source">McGibbon, R.T.; Kiss, G.; Harrigan, M. P; Pande, V. S., <i>in preparation</i></footer></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Current Projects</h2>
+      <h3>Hierarchical Bayesian Mutant Sampling</h3>
+    </hgroup>
+    <article ><div style="margin-top:-120px; float:right;">
+<img width=400 src="figures/cayley.png" /><br/>
+<img width=400 src="figures/information_gain.png" /> 
+</div>
+
+<ul>
+<li>Informative prior on the mutant based on simulations of the wild-type
+$$\vec{p}_i^{M} \sim \operatorname{Dir}(q_i \cdot \vec{c}_i^{WT} + 1/2) $$</li>
+<li>Where $q_i$ models info. transfer between wild-type and mutant states $i$
+  with hyperprior: $q_i \sim \text{Beta}(\alpha, \beta)$</li>
+<li>Per-state expected information gain is semi-analytically solvable.</li>
+</ul>
+<footer class="source">McGibbon, R.T.; Pande, V. S., <i>in preparation</i></footer></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Current Projects</h2>
+      <h3>Optimal MSM Model Selection</h3>
+    </hgroup>
+    <article ><ul>
+<li>Chapman–Kolmogorov tests cannot be used as an objective function. </li>
+</ul>
+<p>$$ T(n \cdot \tau) = T(\tau)^n $$</p>
+<ul>
+<li>Likelihood function <em>opens a door</em>.</li>
+</ul>
+<p>$$ P(\text{traj} \;|\; \text{MSM}) = \prod_{i=1}^{N} p(x_i | s_i) \cdot T_{s_{i-1} \rightarrow s_i}  $$</p>
+<footer class="source">Schwantes, C.R.<sup>*</sup>; McGibbon, R.T.<sup>*</sup>; Pande, V.S., <i>in preparation</i></footer></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>New Idea</h2>
+      <h3>Markov-switching Autoregressive Model</h3>
+    </hgroup>
+    <article ><div style="margin-top:-150px; float:right;">
+<img width=400 src="figures/hamilton1989.png" />
+</div>
+
+<ul>
+<li>Statistical model comparison requires $P(\text{traj} \;|\; \text{MSM})$.</li>
+<li>But the MSM lacks a description of within-state dynamics.</li>
+<li>Hybrid model: dynamics are an Ornstein–Uhlenbeck process, but $\mu, \Sigma, \gamma$
+  evolve by latent discrete-state Markov jump process.</li>
+</ul>
+<p>$$ P(s_t = j| s_{t-1} = i) = T_{ij} $$</p>
+<p>$$ X_{t} = \boldsymbol{A_{s_t}} (X_{t-1}-\mu_{s_t}) + \mathcal{N}(\mu_{s_t}, \boldsymbol{\Sigma}_{s_t}) $$</p>
+<footer class="source">Hamilton, James D. Econometrica 57 (1989): 357-384.</footer></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>New Idea</h2>
+      <h3>Markov-switching Autoregressive Model</h3>
+    </hgroup>
+    <article ><div style="margin-top:-80px; float:right;">
+<video width="500" height="500" controls>
+  <source src="videos/MSARMvsHMM.mp4" type="video/mp4">
+  <source src="videos/MSARMvsHMM.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+</div>
+
+<p>Realizations from MSArM and (Gaussian) MSM</p>
+<ul>
+<li>Same transition matrix.</li>
+<li>Same within-state equilibrium distributions.</li>
+<li>Which looks more like conformational dynamics?</li>
+</ul></article>
+ 
+</slide>
+
+
+<slide class="thank-you-slide segue nobackground">
+  <!-- <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside> -->
+  <article class="flexbox vleft auto-fadein">
+    <h2> Questions?</h2>
+    <p> Thanks especially to Vijay, Christian S., TJ L. and Kyle B.</p>
+  </article>
+  <p data-config-contact class="auto-fadein"> <span>www</span> <a href="http://rmcgibbo.appspot.com/">website</a><br/> <span>github</span> <a href="https://github.com/rmcgibbo">rmcgibbo</a></p>
+  </p>
+  <footer class="source auto-fadein"><span style="padding-left:60px">HTML5 slides with <a href="https://github.com/rmcgibbo/slidedeck"  style="border-bottom: 0px;">slidedeck</a></span></footer>
+</slide>
+
+<slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
