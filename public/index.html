@@ -13,7 +13,7 @@ URL: https://code.google.com/p/io-2012-slides
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Modeling Conformational Dynamics</title>
+  <title> Statistical Modeling of Conformational Dynamics</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
@@ -52,7 +52,7 @@ URL: https://code.google.com/p/io-2012-slides
 <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
 
-    <h1> Modeling Conformational Dynamics</h1>
+    <h1> Statistical Modeling of Conformational Dynamics</h1>
     <h2> Second Year Progress Report</h2>
     <p> Robert McGibbon<br/> August 27, 2013</p>
   </hgroup>
@@ -356,14 +356,34 @@ $$\vec{p}_i^{M} \sim \operatorname{Dir}(q_i \cdot \vec{c}_i^{WT} + 1/2) $$</li>
       <h2>Current Projects</h2>
       <h3>Optimal MSM Model Selection</h3>
     </hgroup>
-    <article ><ul>
-<li>Chapman–Kolmogorov tests cannot be used as an objective function. </li>
-</ul>
-<p>$$ T(n \cdot \tau) = T(\tau)^n $$</p>
+    <article ><div style="margin-top:-140px;  margin-right:-50px; float:right;">
+<img width=220px src="figures/like_comp.png"/>
+</div>
+
+<div style="margin-top:-130px; float:right;">
+<img width=350px src="figures/overfitting.png"/>
+</div>
+
 <ul>
-<li>Likelihood function <em>opens a door</em>.</li>
+<li>Chapman–Kolmogorov tests cannot be used as an objective function.</li>
 </ul>
-<p>$$ P(\text{traj} \;|\; \text{MSM}) = \prod_{i=1}^{N} p(x_i | s_i) \cdot T_{s_{i-1} \rightarrow s_i}  $$</p>
+<div style="float:right; margin-top:-120px;">
+$$ T(n \cdot \tau) = T(\tau)^n $$
+</div>
+
+<div style="float:right; font-size:80%;">
+</div>
+
+<ul>
+<li>Likelihood function <em>opens a door</em>.<ul>
+<li>BIC, Cross validation</li>
+</ul>
+</li>
+</ul>
+<div style="font-size:80%; margin-top:-20px">
+$$ P(\text{traj} \;|\; \text{MSM}) = \prod_{i=1}^{N} \overbrace{p(x_i | s_i)}^\text{tricky part} \cdot T_{s_{i-1} \rightarrow s_i}  $$
+</div>
+
 <footer class="source">Schwantes, C.R.<sup>*</sup>; McGibbon, R.T.<sup>*</sup>; Pande, V.S., <i>in preparation</i></footer></article>
  
 </slide>
@@ -375,18 +395,28 @@ $$\vec{p}_i^{M} \sim \operatorname{Dir}(q_i \cdot \vec{c}_i^{WT} + 1/2) $$</li>
       <h3>Markov-switching Autoregressive Model</h3>
     </hgroup>
     <article ><div style="margin-top:-150px; float:right;">
-<img width=400 src="figures/hamilton1989.png" />
+<img width=550 src="figures/hamilton1990.png" />
 </div>
 
 <ul>
-<li>Statistical model comparison requires $P(\text{traj} \;|\; \text{MSM})$.</li>
-<li>But the MSM lacks a description of within-state dynamics.</li>
+<li>MSM description of within-state dynamics as i.i.d. samples pushes lagtime out, lowers temporal resolution.</li>
 <li>Hybrid model: dynamics are an Ornstein–Uhlenbeck process, but $\mu, \Sigma, \gamma$
   evolve by latent discrete-state Markov jump process.</li>
 </ul>
-<p>$$ P(s_t = j| s_{t-1} = i) = T_{ij} $$</p>
-<p>$$ X_{t} = \boldsymbol{A_{s_t}} (X_{t-1}-\mu_{s_t}) + \mathcal{N}(\mu_{s_t}, \boldsymbol{\Sigma}_{s_t}) $$</p>
-<footer class="source">Hamilton, James D. Econometrica 57 (1989): 357-384.</footer></article>
+<div style="margin-top:-30px; font-size:80%">
+$$ P(s_t = j| s_{t-1} = i) = T_{ij} $$
+
+$$ X_{t} = \boldsymbol{A_{s_t}} (X_{t-1}-\mu_{s_t}) + \mathcal{N}(\mu_{s_t}, \boldsymbol{\Sigma}_{s_t}) $$
+</div>
+
+<aside class="note">
+a,b,c
+</aside>
+
+<footer class="source">
+Hamilton, J. D. <i>Econometrica</i> 57 (1989): 357-384. <br/>
+Hamilton, J. D. <i>J. Econometrics</i> 45 (1990): 39-70.
+</footer></article>
  
 </slide>
 

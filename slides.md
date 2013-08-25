@@ -1,4 +1,4 @@
-% title: Modeling Conformational Dynamics
+% title: Statistical Modeling of Conformational Dynamics
 % subtitle: Second Year Progress Report
 % author: Robert McGibbon
 % author: August 27, 2013
@@ -218,13 +218,31 @@ $$\vec{p}_i^{M} \sim \operatorname{Dir}(q_i \cdot \vec{c}_i^{WT} + 1/2) $$
 title: Current Projects
 subtitle: Optimal MSM Model Selection
 
-- Chapman–Kolmogorov tests cannot be used as an objective function. 
+<div style="margin-top:-140px;  margin-right:-50px; float:right;">
+<img width=220px src="figures/like_comp.png"/>
+</div>
 
+<div style="margin-top:-130px; float:right;">
+<img width=350px src="figures/overfitting.png"/>
+</div>
+
+- Chapman–Kolmogorov tests cannot be used as an objective function.
+
+<div style="float:right; margin-top:-120px;">
 $$ T(n \cdot \tau) = T(\tau)^n $$
+</div>
+
+<div style="float:right; font-size:80%;">
+</div>
 
 - Likelihood function *opens a door*.
+    - BIC, Cross validation
+    
 
-$$ P(\text{traj} \;|\; \text{MSM}) = \prod_{i=1}^{N} p(x_i | s_i) \cdot T_{s_{i-1} \rightarrow s_i}  $$
+<div style="font-size:80%; margin-top:-20px">
+$$ P(\text{traj} \;|\; \text{MSM}) = \prod_{i=1}^{N} \overbrace{p(x_i | s_i)}^\text{tricky part} \cdot T_{s_{i-1} \rightarrow s_i}  $$
+</div>
+
 
 <footer class="source">Schwantes, C.R.<sup>*</sup>; McGibbon, R.T.<sup>*</sup>; Pande, V.S., <i>in preparation</i></footer>
 
@@ -234,21 +252,28 @@ title: New Idea
 subtitle: Markov-switching Autoregressive Model
 
 <div style="margin-top:-150px; float:right;">
-<img width=400 src="figures/hamilton1989.png" />
+<img width=550 src="figures/hamilton1990.png" />
 </div>
 
-- Statistical model comparison requires $P(\text{traj} \;|\; \text{MSM})$.
-- But the MSM lacks a description of within-state dynamics.
+- MSM description of within-state dynamics as i.i.d. samples pushes lagtime out, lowers temporal resolution.
 - Hybrid model: dynamics are an Ornstein–Uhlenbeck process, but $\mu, \Sigma, \gamma$
   evolve by latent discrete-state Markov jump process.
-  
+
+<div style="margin-top:-30px; font-size:80%">
 $$ P(s_t = j| s_{t-1} = i) = T_{ij} $$
 
 $$ X_{t} = \boldsymbol{A_{s_t}} (X_{t-1}-\mu_{s_t}) + \mathcal{N}(\mu_{s_t}, \boldsymbol{\Sigma}_{s_t}) $$
+</div>
 
 
+<aside class="note">
+a,b,c
+</aside>
 
-<footer class="source">Hamilton, James D. Econometrica 57 (1989): 357-384.</footer>
+<footer class="source">
+Hamilton, J. D. <i>Econometrica</i> 57 (1989): 357-384. <br/>
+Hamilton, J. D. <i>J. Econometrics</i> 45 (1990): 39-70.
+</footer>
 
 ---
 title: New Idea
