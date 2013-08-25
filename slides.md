@@ -57,8 +57,8 @@ title: Molecular Dynamics
 </div>
 </center>
 
-- Calculate the physical interactions in the system.
-- Numerically integrate the equations of motion.
+- Calculate the physical interactions in the system
+- Numerically integrate the equations of motion
 
 <footer class="source">
 W. D. Cornell et. al., J. Am. Chem. Soc. 117, 5179 (1995).
@@ -78,14 +78,16 @@ subtitle: First world problems
 - Storing the positions every 200 ps, this is a $\sim$ 1 TB dataset.
 
 ---
-title: Predictive and interpretable models from atomic-level simulations
+title: Goal: Predictive and Interpretable Models from Atomic-level Simulations
 build_lists: true
 
 - What are the relevant conformational states?
-- What are the characteristic dynamics between them?
+    - Voronoi tessellation of conformation space
+    - $s_i = \lbrace x \in \Omega : d(x, y_i) \lt d(x, y_j) \;\forall\; j \in S, j \neq i \rbrace $
 
-- States are a Voronoi tessellation of conformation space $$s_i = \lbrace x \in \Omega : d(x, y_i) \lt d(x, y_j) \;\forall\; j \in S, j \neq i \rbrace $$
-- Dynamics are Markovian through state space $$P(s_t | s_{t-1}, s_{t-2}, \ldots) = P(s_t | s_{t-1})$$
+- What are the characteristic dynamics between them?
+    - Markovian through state space
+    - $P(s_t | s_{t-1}, s_{t-2}, \ldots) = P(s_t | s_{t-1})$
 
 ---
 title: Improving Markov State Model Construction

@@ -128,8 +128,8 @@ G.R Mallacci et. al., Brain 122, 1823 (1999).
 </div>
 </center></p>
 <ul>
-<li>Calculate the physical interactions in the system.</li>
-<li>Numerically integrate the equations of motion.</li>
+<li>Calculate the physical interactions in the system</li>
+<li>Numerically integrate the equations of motion</li>
 </ul>
 <footer class="source">
 W. D. Cornell et. al., J. Am. Chem. Soc. 117, 5179 (1995).
@@ -158,18 +158,24 @@ W. D. Cornell et. al., J. Am. Chem. Soc. 117, 5179 (1995).
 <slide  >
   
     <hgroup>
-      <h2>Predictive and interpretable models from atomic-level simulations</h2>
+      <h2>Goal: Predictive and Interpretable Models from Atomic-level Simulations</h2>
       <h3></h3>
     </hgroup>
     <article ><ul class="build">
-<li>What are the relevant conformational states?</li>
+<li>
+<p>What are the relevant conformational states?</p>
+<ul class="build">
+<li>Voronoi tessellation of conformation space</li>
+<li>$s_i = \lbrace x \in \Omega : d(x, y_i) \lt d(x, y_j) \;\forall\; j \in S, j \neq i \rbrace $</li>
+</ul>
+</li>
 <li>
 <p>What are the characteristic dynamics between them?</p>
+<ul class="build">
+<li>Markovian through state space</li>
+<li>$P(s_t | s_{t-1}, s_{t-2}, \ldots) = P(s_t | s_{t-1})$</li>
+</ul>
 </li>
-<li>
-<p>States are a Voronoi tessellation of conformation space $$s_i = \lbrace x \in \Omega : d(x, y_i) \lt d(x, y_j) \;\forall\; j \in S, j \neq i \rbrace $$</p>
-</li>
-<li>Dynamics are Markovian through state space $$P(s_t | s_{t-1}, s_{t-2}, \ldots) = P(s_t | s_{t-1})$$</li>
 </ul></article>
  
 </slide>
