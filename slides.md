@@ -201,7 +201,7 @@ subtitle: MSM-accelerated Distributed Molecular Dynamics
 
 ---
 title: Current projects
-subtitle: MSM-accelerated Distributed Molecular Dynamic
+subtitle: MSM-accelerated Distributed Molecular Dynamics
 
 <center style="margin-top:-80px; margin-left:-60px">
 <video width="1100" height="500" controls loop>
