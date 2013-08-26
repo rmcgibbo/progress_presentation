@@ -73,11 +73,11 @@ URL: https://code.google.com/p/io-2012-slides
 </div>
 
 <ul>
-<li>Motivation</li>
-<li>Improving MSM construction with large-margin metric learning</li>
-<li>Current projects and future directions<ul>
+<li>Biological motivation</li>
+<li>Improving Markov state model construction with large-margin metric learning</li>
+<li>Current projects and future directions:<ul>
 <li>Adaptive sampling</li>
-<li>Statistical model selection</li>
+<li>Model selection</li>
 <li>Richer model classes</li>
 </ul>
 </li>
@@ -150,7 +150,7 @@ W. D. Cornell et. al., <i>J. Am. Chem. Soc.</i> 117, 5179 (1995).
 </center></p>
 <ul>
 <li>$100 \frac{\text{ns}}{\text{day } \cdot \text{ GPU}} \cdot 500 \text{ GPUs} \cdot 1 \text{ week} = 350 \text{ $\mu$s}$</li>
-<li>Storing the positions every 200 ps, this is a $\sim$ 1 TB dataset.</li>
+<li>Storing the positions every 200 ps, this is a $\sim$ 1 TB dataset</li>
 </ul></article>
  
 </slide>
@@ -198,9 +198,9 @@ W. D. Cornell et. al., <i>J. Am. Chem. Soc.</i> 117, 5179 (1995).
     </hgroup>
     <article ><p>The MSM state decomposition, a <em>clustering</em>, is characterized by a bias-variance trade off.</p>
 <ul>
-<li><strong>Bias:</strong> Lowering the number of states introduces systematic error in the model's dynamics.</li>
+<li><strong>Bias:</strong> Lowering the number of states introduces systematic error in the model's dynamics</li>
 <li>Hamiltonian mechanics is perfectly Markovian in $\mathbb{R}^{6N}$</li>
-<li><strong>Variance:</strong> Raising the number of states increases statistical noise in the model's dynamics.</li>
+<li><strong>Variance:</strong> Raising the number of states increases statistical noise in the model's dynamics</li>
 <li>How do we balance this trade off and avoid overfitting?</li>
 </ul></article>
  
@@ -218,9 +218,9 @@ W. D. Cornell et. al., <i>J. Am. Chem. Soc.</i> 117, 5179 (1995).
 
 <ul>
 <li>Conformational change is characterized by slow <em>conformationally subtle</em>
-  transitions.</li>
-<li>To resolve these transitions in our models, our states need to be "smaller".</li>
-<li>We can save our statistics by picking their <strong>shape</strong> more intelligently.</li>
+  transitions</li>
+<li>To resolve these transitions in our models, our states need to be "smaller"</li>
+<li>We can save our statistics by picking their <strong>shape</strong> more intelligently</li>
 </ul></article>
  
 </slide>
@@ -234,9 +234,9 @@ W. D. Cornell et. al., <i>J. Am. Chem. Soc.</i> 117, 5179 (1995).
     <article ><p><img style="float:right" height=250 src=figures/hingeloss.png /></p>
 <ul>
 <li>Goal of the distance metric for clustering is to distinguish <em>kinetically</em>-close
-  from <em>kinetically</em>-far pairs of conformations. </li>
+  from <em>kinetically</em>-far pairs of conformations.</li>
 <li>Large-margin learning theory: reduce generalization error by separating the
-  two classes as far as possible.</li>
+  two classes as far as possible</li>
 </ul>
 <p>$$ \max_{\mathbf{X},\rho} \left[ \alpha \rho - \frac{1}{N} \sum_i^N \lambda_\text{huber} \left(d^\mathbf{X}(\vec{a}_i,\vec{c}_i) - d^\mathbf{X}(\vec{a}_i, \vec{b}_i) - \rho \right) \right] $$</p></article>
  
@@ -251,8 +251,8 @@ W. D. Cornell et. al., <i>J. Am. Chem. Soc.</i> 117, 5179 (1995).
     <article ><p>$$ d^{\mathbf{X}}(\vec{a}, \vec{b}) = (\vec{a} - \vec{b})^{T} \mathbf{X} (\vec{a} - \vec{b}) $$</p>
 <p>$$ \max_{\mathbf{X},\rho} \left[ \alpha \rho - \frac{1}{N} \sum_i^N \lambda \left(d^\mathbf{X}(\vec{a}_i,\vec{c}_i) - d^\mathbf{X}(\vec{a}_i, \vec{b}_i) - \rho \right) \right] $$</p>
 <ul>
-<li>The matrix $\mathbf{X}$ is constrained to be positive semidefinite.</li>
-<li>Relatively efficient optimization by gradient descent with rank-1 updates naturally maintains p.s.d. constraint.</li>
+<li>The matrix $\mathbf{X}$ is constrained to be positive semidefinite</li>
+<li>Relatively efficient optimization by gradient descent with rank-1 updates naturally maintains p.s.d. constraint</li>
 </ul>
 <footer class="source">Shen, C.; Kim, J.; Wang, L. <i>IEEE Trans. Neural Networks</i> 21, 1524 (2010)</footer></article>
  
@@ -265,7 +265,7 @@ W. D. Cornell et. al., <i>J. Am. Chem. Soc.</i> 117, 5179 (1995).
       <h3></h3>
     </hgroup>
     <article ><p><img height=350 src="figures/toy_microstates.png" /></p>
-<p>2D Brownian dynamics, where vertical diffusion constant is 10x greater than the horizontal diffusion constant.</p>
+<p>2D Brownian dynamics, where vertical diffusion constant is 10x greater than the horizontal diffusion constant</p>
 <footer class="source">McGibbon, R. T.; Pande, V. S.; <i>J. Chem. Theory Comput.</i> 9, 2900 (2013)</footer></article>
  
 </slide>
@@ -277,7 +277,7 @@ W. D. Cornell et. al., <i>J. Am. Chem. Soc.</i> 117, 5179 (1995).
       <h3></h3>
     </hgroup>
     <article ><p><img height=350 src="figures/timescales.png" /></p>
-<p>KDML distance metric gives converged behavior with fewer states.</p>
+<p>KDML distance metric gives converged behavior with fewer states</p>
 <footer class="source">McGibbon, R. T.; Pande, V. S. <i>J. Chem. Theory Comput.</i> 9 2900 (2013)</footer></article>
  
 </slide>
@@ -305,7 +305,7 @@ W. D. Cornell et. al., <i>J. Am. Chem. Soc.</i> 117, 5179 (1995).
     <!-- <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside> -->
     <hgroup class="auto-fadein">
       <h2>Future Directions</h2>
-      <h3>Adaptive sampling, model selection, statistical learning.</h3>
+      <h3>Adaptive sampling, model selection, statistical learning</h3>
     </hgroup>
   
 </slide>
@@ -325,10 +325,10 @@ W. D. Cornell et. al., <i>J. Am. Chem. Soc.</i> 117, 5179 (1995).
 </div>
 
 <ul>
-<li>Node-parallelism is the present and future of computing. We must exploit ergodic theorem.</li>
-<li>MSMAccelerator: cluster based client-server architecture over ZeroMQ. </li>
-<li>Runs simulations with OpenMM &amp; AMBER.</li>
-<li>Starting conditions determined on-the-fly by MSMBuilder.</li>
+<li>Node-parallelism is the present and future of computing. We must exploit ergodic theorem</li>
+<li>MSMAccelerator: cluster based client-server architecture over ZeroMQ</li>
+<li>Runs simulations with OpenMM &amp; AMBER</li>
+<li>Starting conditions determined on-the-fly by MSMBuilder</li>
 </ul>
 <footer class="source">McGibbon, R.T.; Kiss, G.; Harrigan, M. P; Pande, V. S., <i>in preparation</i></footer></article>
  
@@ -366,7 +366,7 @@ W. D. Cornell et. al., <i>J. Am. Chem. Soc.</i> 117, 5179 (1995).
 $$\vec{p}_i^{M} \sim \operatorname{Dir}(q_i \cdot \vec{c}_i^{WT} + 1/2) $$</li>
 <li>Where $q_i$ models info. transfer between wild-type and mutant states $i$
   with hyperprior: $q_i \sim \text{Beta}(\alpha, \beta)$</li>
-<li>Per-state expected information gain is semi-analytically solvable.</li>
+<li>Per-state expected information gain is semi-analytically solvable</li>
 </ul>
 <footer class="source">McGibbon, R.T.; Pande, V. S., <i>in preparation</i></footer></article>
  
@@ -387,7 +387,7 @@ $$\vec{p}_i^{M} \sim \operatorname{Dir}(q_i \cdot \vec{c}_i^{WT} + 1/2) $$</li>
 </div>
 
 <ul>
-<li>Chapman–Kolmogorov tests cannot be used as an objective function.</li>
+<li>Chapman–Kolmogorov tests cannot be used as an objective function</li>
 </ul>
 <div style="float:right; margin-top:-120px;">
 $$ T(n \cdot \tau) = T(\tau)^n $$
@@ -421,9 +421,9 @@ $$ P(\text{traj} \;|\; \text{MSM}) = \prod_{i=1}^{N} \overbrace{p(x_i | s_i)}^\t
 </div>
 
 <ul>
-<li>MSM description of within-state dynamics as i.i.d. samples pushes lagtime out, lowers temporal resolution.</li>
+<li>MSM description of within-state dynamics as i.i.d. samples pushes lag time out, lowers temporal resolution</li>
 <li>Hybrid model: dynamics are an Ornstein–Uhlenbeck process, but $\mu, \Sigma, \gamma$
-  evolve by latent discrete-state Markov jump process.</li>
+  evolve by latent discrete-state Markov jump process</li>
 </ul>
 <div style="margin-top:-30px; font-size:80%">
 $$ P(s_t = j| s_{t-1} = i) = T_{ij} $$
@@ -458,8 +458,8 @@ Your browser does not support the video tag.
 
 <p>Realizations from MSArM and (Gaussian) MSM</p>
 <ul>
-<li>Same transition matrix.</li>
-<li>Same within-state equilibrium distributions.</li>
+<li>Same transition matrix</li>
+<li>Same within-state equilibrium distributions</li>
 <li>Which looks more like conformational dynamics?</li>
 </ul></article>
  

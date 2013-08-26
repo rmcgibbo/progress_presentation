@@ -19,11 +19,11 @@ dsubtitle: Three Parts
   <img height=200px style="padding-top:10px;" src="figures/msmaccelerator.png"/>
 </div>
 
-- Motivation
-- Improving MSM construction with large-margin metric learning
-- Current projects and future directions
+- Biological motivation
+- Improving Markov state model construction with large-margin metric learning
+- Current projects and future directions:
     - Adaptive sampling
-    - Statistical model selection
+    - Model selection
     - Richer model classes
     
 ---
@@ -75,7 +75,7 @@ subtitle: First world problems
 </center>
 
 - $100 \frac{\text{ns}}{\text{day } \cdot \text{ GPU}} \cdot 500 \text{ GPUs} \cdot 1 \text{ week} = 350 \text{ $\mu$s}$
-- Storing the positions every 200 ps, this is a $\sim$ 1 TB dataset.
+- Storing the positions every 200 ps, this is a $\sim$ 1 TB dataset
 
 ---
 title: Goal: Predictive and Interpretable Models from Atomic-level Simulations
@@ -100,9 +100,9 @@ title: MSMs have Competing Sources of Error
 
 The MSM state decomposition, a *clustering*, is characterized by a bias-variance trade off.
 
-- **Bias:** Lowering the number of states introduces systematic error in the model's dynamics.
+- **Bias:** Lowering the number of states introduces systematic error in the model's dynamics
 - Hamiltonian mechanics is perfectly Markovian in $\mathbb{R}^{6N}$
-- **Variance:** Raising the number of states increases statistical noise in the model's dynamics.
+- **Variance:** Raising the number of states increases statistical noise in the model's dynamics
 - How do we balance this trade off and avoid overfitting?
 
 
@@ -114,9 +114,9 @@ title: Choosing the States' Shape
 </div>
 
 - Conformational change is characterized by slow *conformationally subtle*
-  transitions.
-- To resolve these transitions in our models, our states need to be "smaller".
-- We can save our statistics by picking their **shape** more intelligently.
+  transitions
+- To resolve these transitions in our models, our states need to be "smaller"
+- We can save our statistics by picking their **shape** more intelligently
 
 
 ---
@@ -126,9 +126,9 @@ title: Large-Margin Classification
 
 
 - Goal of the distance metric for clustering is to distinguish *kinetically*-close
-  from *kinetically*-far pairs of conformations. 
+  from *kinetically*-far pairs of conformations.
 - Large-margin learning theory: reduce generalization error by separating the
-  two classes as far as possible.
+  two classes as far as possible
 
 $$ \max_{\mathbf{X},\rho} \left[ \alpha \rho - \frac{1}{N} \sum_i^N \lambda_\text{huber} \left(d^\mathbf{X}(\vec{a}_i,\vec{c}_i) - d^\mathbf{X}(\vec{a}_i, \vec{b}_i) - \rho \right) \right] $$
 
@@ -139,8 +139,8 @@ $$ d^{\mathbf{X}}(\vec{a}, \vec{b}) = (\vec{a} - \vec{b})^{T} \mathbf{X} (\vec{a
 
 $$ \max_{\mathbf{X},\rho} \left[ \alpha \rho - \frac{1}{N} \sum_i^N \lambda \left(d^\mathbf{X}(\vec{a}_i,\vec{c}_i) - d^\mathbf{X}(\vec{a}_i, \vec{b}_i) - \rho \right) \right] $$
 
-- The matrix $\mathbf{X}$ is constrained to be positive semidefinite.
-- Relatively efficient optimization by gradient descent with rank-1 updates naturally maintains p.s.d. constraint.
+- The matrix $\mathbf{X}$ is constrained to be positive semidefinite
+- Relatively efficient optimization by gradient descent with rank-1 updates naturally maintains p.s.d. constraint
 
 <footer class="source">Shen, C.; Kim, J.; Wang, L. <i>IEEE Trans. Neural Networks</i> 21, 1524 (2010)</footer>
 
@@ -150,7 +150,7 @@ class: img-top-center
 
 <img height=350 src="figures/toy_microstates.png" />
 
-2D Brownian dynamics, where vertical diffusion constant is 10x greater than the horizontal diffusion constant.
+2D Brownian dynamics, where vertical diffusion constant is 10x greater than the horizontal diffusion constant
 
 <footer class="source">McGibbon, R. T.; Pande, V. S.; <i>J. Chem. Theory Comput.</i> 9, 2900 (2013)</footer>
 
@@ -160,7 +160,7 @@ class: img-top-center
 
 <img height=350 src="figures/timescales.png" />
 
-KDML distance metric gives converged behavior with fewer states.
+KDML distance metric gives converged behavior with fewer states
 
 <footer class="source">McGibbon, R. T.; Pande, V. S. <i>J. Chem. Theory Comput.</i> 9 2900 (2013)</footer>
 
@@ -177,7 +177,7 @@ title: Fip35 WW Domain
 
 ---
 title: Future Directions
-subtitle: Adaptive sampling, model selection, statistical learning.
+subtitle: Adaptive sampling, model selection, statistical learning
 class: segue dark nobackground
 
 ---
@@ -192,10 +192,10 @@ subtitle: MSM-accelerated Distributed Molecular Dynamics
 </table>
 </div>
 
-- Node-parallelism is the present and future of computing. We must exploit ergodic theorem.
-- MSMAccelerator: cluster based client-server architecture over ZeroMQ. 
-- Runs simulations with OpenMM & AMBER.
-- Starting conditions determined on-the-fly by MSMBuilder.
+- Node-parallelism is the present and future of computing. We must exploit ergodic theorem
+- MSMAccelerator: cluster based client-server architecture over ZeroMQ
+- Runs simulations with OpenMM & AMBER
+- Starting conditions determined on-the-fly by MSMBuilder
 
 <footer class="source">McGibbon, R.T.; Kiss, G.; Harrigan, M. P; Pande, V. S., <i>in preparation</i></footer>
 
@@ -225,7 +225,7 @@ subtitle: Hierarchical Bayesian Mutant Sampling
 $$\vec{p}_i^{M} \sim \operatorname{Dir}(q_i \cdot \vec{c}_i^{WT} + 1/2) $$
 - Where $q_i$ models info. transfer between wild-type and mutant states $i$
   with hyperprior: $q_i \sim \text{Beta}(\alpha, \beta)$
-- Per-state expected information gain is semi-analytically solvable.
+- Per-state expected information gain is semi-analytically solvable
 
 <footer class="source">McGibbon, R.T.; Pande, V. S., <i>in preparation</i></footer>
 
@@ -241,7 +241,7 @@ subtitle: Optimal MSM Model Selection
 <img width=350px src="figures/overfitting.png"/>
 </div>
 
-- Chapman–Kolmogorov tests cannot be used as an objective function.
+- Chapman–Kolmogorov tests cannot be used as an objective function
 
 <div style="float:right; margin-top:-120px;">
 $$ T(n \cdot \tau) = T(\tau)^n $$
@@ -270,9 +270,9 @@ subtitle: Markov-switching Autoregressive Model
 <img width=550 src="figures/hamilton1990.png" />
 </div>
 
-- MSM description of within-state dynamics as i.i.d. samples pushes lagtime out, lowers temporal resolution.
+- MSM description of within-state dynamics as i.i.d. samples pushes lag time out, lowers temporal resolution
 - Hybrid model: dynamics are an Ornstein–Uhlenbeck process, but $\mu, \Sigma, \gamma$
-  evolve by latent discrete-state Markov jump process.
+  evolve by latent discrete-state Markov jump process
 
 <div style="margin-top:-30px; font-size:80%">
 $$ P(s_t = j| s_{t-1} = i) = T_{ij} $$
@@ -304,8 +304,8 @@ Your browser does not support the video tag.
 
 Realizations from MSArM and (Gaussian) MSM
 
-- Same transition matrix.
-- Same within-state equilibrium distributions.
+- Same transition matrix
+- Same within-state equilibrium distributions
 - Which looks more like conformational dynamics?
 
 
