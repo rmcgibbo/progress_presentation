@@ -1,0 +1,516 @@
+%merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (-1) disabled
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{41}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{http://dx.doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Dobson}(2003)}]{Dobson2003Protein}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~M.}\ \bibnamefont
+  {Dobson}},\ }\href
+  {http://www.nature.com/nature/journal/v426/n6968/full/nature02261.html}
+  {\bibfield  {journal} {\bibinfo  {journal} {Nature}\ }\textbf {\bibinfo
+  {volume} {426}},\ \bibinfo {pages} {884} (\bibinfo {year}
+  {2003})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kim}\ \emph {et~al.}(2008)\citenamefont {Kim},
+  \citenamefont {Born}, \citenamefont {Havenith},\ and\ \citenamefont
+  {Gruebele}}]{Kim2008Real}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Kim}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Born}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Havenith}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Gruebele}},\ }\href {\doibase
+  10.1002/anie.200802281} {\bibfield  {journal} {\bibinfo  {journal} {Angew.
+  Chem. Int. Ed.}\ }\textbf {\bibinfo {volume} {47}},\ \bibinfo {pages} {6486}
+  (\bibinfo {year} {2008})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Austin}\ \emph {et~al.}(1975)\citenamefont {Austin},
+  \citenamefont {Beeson}, \citenamefont {Eisenstein}, \citenamefont
+  {Frauenfelder},\ and\ \citenamefont {Gunsalus}}]{Austin1975Dynamics}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~H.}\ \bibnamefont
+  {Austin}}, \bibinfo {author} {\bibfnamefont {K.~W.}\ \bibnamefont {Beeson}},
+  \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Eisenstein}}, \bibinfo
+  {author} {\bibfnamefont {H.}~\bibnamefont {Frauenfelder}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {I.~C.}\ \bibnamefont {Gunsalus}},\ }\href {\doibase
+  10.1021/bi00695a021} {\bibfield  {journal} {\bibinfo  {journal}
+  {Biochemistry}\ }\textbf {\bibinfo {volume} {14}},\ \bibinfo {pages} {5355}
+  (\bibinfo {year} {1975})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bahar}\ \emph {et~al.}(2007)\citenamefont {Bahar},
+  \citenamefont {Chennubhotla},\ and\ \citenamefont
+  {Tobi}}]{Bahar2007Intrinsic}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {Bahar}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Chennubhotla}},
+  \ and\ \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Tobi}},\ }\href
+  {\doibase http://dx.doi.org/10.1016/j.sbi.2007.09.011} {\bibfield  {journal}
+  {\bibinfo  {journal} {Curr. Opin. Struct. Biol.}\ }\textbf {\bibinfo {volume}
+  {17}},\ \bibinfo {pages} {633 } (\bibinfo {year} {2007})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Cosa}\ \emph {et~al.}(2006)\citenamefont {Cosa},
+  \citenamefont {Zeng}, \citenamefont {Liu}, \citenamefont {Landes},
+  \citenamefont {Makarov}, \citenamefont {Musier-Forsyth},\ and\ \citenamefont
+  {Barbara}}]{Cosa2006Evidence}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Cosa}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Zeng}}, \bibinfo
+  {author} {\bibfnamefont {H.-W.}\ \bibnamefont {Liu}}, \bibinfo {author}
+  {\bibfnamefont {C.~F.}\ \bibnamefont {Landes}}, \bibinfo {author}
+  {\bibfnamefont {D.~E.}\ \bibnamefont {Makarov}}, \bibinfo {author}
+  {\bibfnamefont {K.}~\bibnamefont {Musier-Forsyth}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {P.~F.}\ \bibnamefont {Barbara}},\ }\href {\doibase
+  10.1021/jp054189i} {\bibfield  {journal} {\bibinfo  {journal} {J. Phys. Chem.
+  B}\ }\textbf {\bibinfo {volume} {110}},\ \bibinfo {pages} {2419} (\bibinfo
+  {year} {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zhang}\ \emph {et~al.}(2011)\citenamefont {Zhang},
+  \citenamefont {Lam}, \citenamefont {Mou}, \citenamefont {Kimura},
+  \citenamefont {Chung}, \citenamefont {Chandrasekar}, \citenamefont {Winkler},
+  \citenamefont {Mayo},\ and\ \citenamefont {Shan}}]{Zhang2011Direct}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {X.}~\bibnamefont
+  {Zhang}}, \bibinfo {author} {\bibfnamefont {V.~Q.}\ \bibnamefont {Lam}},
+  \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Mou}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {Kimura}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {Chung}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {Chandrasekar}}, \bibinfo {author} {\bibfnamefont {J.~R.}\
+  \bibnamefont {Winkler}}, \bibinfo {author} {\bibfnamefont {S.~L.}\
+  \bibnamefont {Mayo}}, \ and\ \bibinfo {author} {\bibfnamefont {S.-o.}\
+  \bibnamefont {Shan}},\ }\href {\doibase 10.1073/pnas.1019051108} {\bibfield
+  {journal} {\bibinfo  {journal} {Proc. Natl. Acad. Sci. U.S.A.}\ }\textbf
+  {\bibinfo {volume} {108}},\ \bibinfo {pages} {6450} (\bibinfo {year}
+  {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Mertens}\ and\ \citenamefont
+  {Svergun}(2010)}]{Mertens2010Structural}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~D.}\ \bibnamefont
+  {Mertens}}\ and\ \bibinfo {author} {\bibfnamefont {D.~I.}\ \bibnamefont
+  {Svergun}},\ }\href {\doibase http://dx.doi.org/10.1016/j.jsb.2010.06.012}
+  {\bibfield  {journal} {\bibinfo  {journal} {J. Struct. Biol.}\ }\textbf
+  {\bibinfo {volume} {172}},\ \bibinfo {pages} {128 } (\bibinfo {year}
+  {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tzeng}\ and\ \citenamefont
+  {Kalodimos}(2011)}]{Tzeng2011Protein}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.-R.}\ \bibnamefont
+  {Tzeng}}\ and\ \bibinfo {author} {\bibfnamefont {C.~G.}\ \bibnamefont
+  {Kalodimos}},\ }\href {\doibase http://dx.doi.org/10.1016/j.sbi.2010.10.007}
+  {\bibfield  {journal} {\bibinfo  {journal} {Curr. Opin. Struct. Biol.}\
+  }\textbf {\bibinfo {volume} {21}},\ \bibinfo {pages} {62 } (\bibinfo {year}
+  {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Eastman}\ \emph {et~al.}(2013)\citenamefont
+  {Eastman}, \citenamefont {Friedrichs}, \citenamefont {Chodera}, \citenamefont
+  {Radmer}, \citenamefont {Bruns}, \citenamefont {Ku}, \citenamefont
+  {Beauchamp}, \citenamefont {Lane}, \citenamefont {Wang}, \citenamefont
+  {Shukla}, \citenamefont {Tye}, \citenamefont {Houston}, \citenamefont
+  {Stich}, \citenamefont {Klein}, \citenamefont {Shirts},\ and\ \citenamefont
+  {Pande}}]{Eastman2013OpenMM}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Eastman}}, \bibinfo {author} {\bibfnamefont {M.~S.}\ \bibnamefont
+  {Friedrichs}}, \bibinfo {author} {\bibfnamefont {J.~D.}\ \bibnamefont
+  {Chodera}}, \bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont {Radmer}},
+  \bibinfo {author} {\bibfnamefont {C.~M.}\ \bibnamefont {Bruns}}, \bibinfo
+  {author} {\bibfnamefont {J.~P.}\ \bibnamefont {Ku}}, \bibinfo {author}
+  {\bibfnamefont {K.~A.}\ \bibnamefont {Beauchamp}}, \bibinfo {author}
+  {\bibfnamefont {T.~J.}\ \bibnamefont {Lane}}, \bibinfo {author}
+  {\bibfnamefont {L.-P.}\ \bibnamefont {Wang}}, \bibinfo {author}
+  {\bibfnamefont {D.}~\bibnamefont {Shukla}}, \bibinfo {author} {\bibfnamefont
+  {T.}~\bibnamefont {Tye}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Houston}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Stich}},
+  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Klein}}, \bibinfo
+  {author} {\bibfnamefont {M.~R.}\ \bibnamefont {Shirts}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {V.~S.}\ \bibnamefont {Pande}},\ }\href {\doibase
+  10.1021/ct300857j} {\bibfield  {journal} {\bibinfo  {journal} {J. Chem.
+  Theory Comput.}\ }\textbf {\bibinfo {volume} {9}},\ \bibinfo {pages} {461}
+  (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Shirts}\ and\ \citenamefont
+  {Pande}(2000)}]{Shirts2000Screen}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Shirts}}\ and\ \bibinfo {author} {\bibfnamefont {V.~S.}\ \bibnamefont
+  {Pande}},\ }\href {http://www.sciencemag.org/content/290/5498/1903.short}
+  {\bibfield  {journal} {\bibinfo  {journal} {Science}\ }\textbf {\bibinfo
+  {volume} {290}} (\bibinfo {year} {2000})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Shaw}\ \emph {et~al.}(2009)\citenamefont {Shaw},
+  \citenamefont {Dror}, \citenamefont {Salmon}, \citenamefont {Grossman},
+  \citenamefont {Mackenzie}, \citenamefont {Bank}, \citenamefont {Young},
+  \citenamefont {Deneroff}, \citenamefont {Batson}, \citenamefont {Bowers},
+  \citenamefont {Chow}, \citenamefont {Eastwood}, \citenamefont {Ierardi},
+  \citenamefont {Klepeis}, \citenamefont {Kuskin}, \citenamefont {Larson},
+  \citenamefont {Lindorff-Larsen}, \citenamefont {Maragakis}, \citenamefont
+  {Moraes}, \citenamefont {Piana}, \citenamefont {Shan},\ and\ \citenamefont
+  {Towles}}]{Shaw2009Millisecond}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Shaw}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Dror}}, \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Salmon}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Grossman}}, \bibinfo {author}
+  {\bibfnamefont {K.}~\bibnamefont {Mackenzie}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Bank}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {Young}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Deneroff}}, \bibinfo {author} {\bibfnamefont
+  {B.}~\bibnamefont {Batson}}, \bibinfo {author} {\bibfnamefont
+  {K.}~\bibnamefont {Bowers}}, \bibinfo {author} {\bibfnamefont
+  {E.}~\bibnamefont {Chow}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Eastwood}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Ierardi}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Klepeis}}, \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Kuskin}}, \bibinfo {author}
+  {\bibfnamefont {R.}~\bibnamefont {Larson}}, \bibinfo {author} {\bibfnamefont
+  {K.}~\bibnamefont {Lindorff-Larsen}}, \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {Maragakis}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Moraes}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {Piana}}, \bibinfo {author} {\bibfnamefont
+  {Y.}~\bibnamefont {Shan}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {B.}~\bibnamefont {Towles}},\ }in\ \href {\doibase 10.1145/1654059.1654126}
+  {\emph {\bibinfo {booktitle} {High Performance Computing Networking, Storage
+  and Analysis, Proceedings of the Conference on}}}\ (\bibinfo {year} {2009})\
+  pp.\ \bibinfo {pages} {1--11}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hess}(2008)}]{Hess2008PLINCS}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Hess}},\ }\href {\doibase 10.1021/ct700200b} {\bibfield  {journal} {\bibinfo
+   {journal} {J. Chem. Theory Comput.}\ }\textbf {\bibinfo {volume} {4}},\
+  \bibinfo {pages} {116} (\bibinfo {year} {2008})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Freddolino}\ \emph {et~al.}(2010)\citenamefont
+  {Freddolino}, \citenamefont {Harrison}, \citenamefont {Liu},\ and\
+  \citenamefont {Schulten}}]{Freddolino2010Challenges}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~L.}\ \bibnamefont
+  {Freddolino}}, \bibinfo {author} {\bibfnamefont {C.~B.}\ \bibnamefont
+  {Harrison}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Liu}}, \
+  and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Schulten}},\ }\href
+  {http://www.nature.com/nphys/journal/v6/n10/full/nphys1713.html} {\bibfield
+  {journal} {\bibinfo  {journal} {Nat. Phys.}\ }\textbf {\bibinfo {volume}
+  {6}},\ \bibinfo {pages} {751} (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lane}\ \emph {et~al.}(2013)\citenamefont {Lane},
+  \citenamefont {Shukla}, \citenamefont {Beauchamp},\ and\ \citenamefont
+  {Pande}}]{Lane2013Milliseconds}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~J.}\ \bibnamefont
+  {Lane}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Shukla}},
+  \bibinfo {author} {\bibfnamefont {K.~A.}\ \bibnamefont {Beauchamp}}, \ and\
+  \bibinfo {author} {\bibfnamefont {V.~S.}\ \bibnamefont {Pande}},\ }\href
+  {\doibase http://dx.doi.org/10.1016/j.sbi.2012.11.002} {\bibfield  {journal}
+  {\bibinfo  {journal} {Curr. Opin. Struct. Biol.}\ }\textbf {\bibinfo {volume}
+  {23}},\ \bibinfo {pages} {58 } (\bibinfo {year} {2013})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Best}\ and\ \citenamefont
+  {Hummer}(2010)}]{Best2010Coordinate}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~B.}\ \bibnamefont
+  {Best}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Hummer}},\
+  }\href {\doibase 10.1073/pnas.0910390107} {\bibfield  {journal} {\bibinfo
+  {journal} {Proc. Natl. Acad. Sci. U.S.A.}\ }\textbf {\bibinfo {volume}
+  {107}},\ \bibinfo {pages} {1088} (\bibinfo {year} {2010})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Pande}\ \emph {et~al.}(2010)\citenamefont {Pande},
+  \citenamefont {Beauchamp},\ and\ \citenamefont
+  {Bowman}}]{Pande2010Everything}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.~S.}\ \bibnamefont
+  {Pande}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Beauchamp}}, \
+  and\ \bibinfo {author} {\bibfnamefont {G.~R.}\ \bibnamefont {Bowman}},\
+  }\href {\doibase 10.1016/j.ymeth.2010.06.002} {\bibfield  {journal} {\bibinfo
+   {journal} {Methods}\ }\textbf {\bibinfo {volume} {52}},\ \bibinfo {pages}
+  {99 } (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Beauchamp}\ \emph
+  {et~al.}(2012{\natexlab{a}})\citenamefont {Beauchamp}, \citenamefont
+  {McGibbon}, \citenamefont {Lin},\ and\ \citenamefont
+  {Pande}}]{Beauchamp2012Simple}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~A.}\ \bibnamefont
+  {Beauchamp}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {McGibbon}},
+  \bibinfo {author} {\bibfnamefont {Y.-S.}\ \bibnamefont {Lin}}, \ and\
+  \bibinfo {author} {\bibfnamefont {V.~S.}\ \bibnamefont {Pande}},\ }\href
+  {\doibase 10.1073/pnas.1201810109} {\bibfield  {journal} {\bibinfo  {journal}
+  {Proc. Natl. Acad. Sci. U.S.A.}\ }\textbf {\bibinfo {volume} {109}},\
+  \bibinfo {pages} {17807} (\bibinfo {year} {2012}{\natexlab{a}})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Prinz}\ \emph {et~al.}(2011)\citenamefont {Prinz},
+  \citenamefont {Wu}, \citenamefont {Sarich}, \citenamefont {Keller},
+  \citenamefont {Senne}, \citenamefont {Held}, \citenamefont {Chodera},
+  \citenamefont {Schutte},\ and\ \citenamefont {Noe}}]{Prinz2011Markov}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.-H.}\ \bibnamefont
+  {Prinz}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Wu}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Sarich}}, \bibinfo {author}
+  {\bibfnamefont {B.}~\bibnamefont {Keller}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Senne}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Held}}, \bibinfo {author} {\bibfnamefont {J.~D.}\
+  \bibnamefont {Chodera}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Schutte}}, \ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Noe}},\ }\href {\doibase 10.1063/1.3565032} {\bibfield  {journal} {\bibinfo
+  {journal} {J. Chem. Phys.}\ }\textbf {\bibinfo {volume} {134}},\ \bibinfo
+  {eid} {174105} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bowman}\ \emph {et~al.}(2013)\citenamefont {Bowman},
+  \citenamefont {Meng},\ and\ \citenamefont {Huang}}]{Bowman2013Quantitative}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~R.}\ \bibnamefont
+  {Bowman}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Meng}}, \ and\
+  \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Huang}},\ }\href
+  {\doibase 10.1063/1.4812768} {\bibfield  {journal} {\bibinfo  {journal} {J.
+  Chem. Phys.}\ }\textbf {\bibinfo {volume} {139}},\ \bibinfo {eid} {121905}
+  (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {McGibbon}\ and\ \citenamefont
+  {Pande}(2013)}]{McGibbon2013Learning}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~T.}\ \bibnamefont
+  {McGibbon}}\ and\ \bibinfo {author} {\bibfnamefont {V.~S.}\ \bibnamefont
+  {Pande}},\ }\href {\doibase 10.1021/ct400132h} {\bibfield  {journal}
+  {\bibinfo  {journal} {J. Chem. Theory Comput.}\ }\textbf {\bibinfo {volume}
+  {9}},\ \bibinfo {pages} {2900} (\bibinfo {year} {2013})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Van~Kampen}(2007)}]{vanKampen:2007ug}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~G.}\ \bibnamefont
+  {Van~Kampen}},\ }\href
+  {http://www.amazon.com/exec/obidos/redirect?tag=citeulike07-20\&path=ASIN/0444529659}
+  {\emph {\bibinfo {title} {{Stochastic Processes in Physics and
+  Chemistry}}}},\ \bibinfo {edition} {3rd}\ ed.\ (\bibinfo  {publisher} {North
+  Holland},\ \bibinfo {year} {2007})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Beauchamp}\ \emph
+  {et~al.}(2012{\natexlab{b}})\citenamefont {Beauchamp}, \citenamefont
+  {McGibbon}, \citenamefont {Lin},\ and\ \citenamefont
+  {Pande}}]{Beauchamp:2012kp}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~A.}\ \bibnamefont
+  {Beauchamp}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {McGibbon}},
+  \bibinfo {author} {\bibfnamefont {Y.-S.}\ \bibnamefont {Lin}}, \ and\
+  \bibinfo {author} {\bibfnamefont {V.~S.}\ \bibnamefont {Pande}},\ }\href
+  {\doibase 10.1073/pnas.1201810109} {\bibfield  {journal} {\bibinfo  {journal}
+  {Proc. Natl. Acad. Sci. U.S.A.}\ }\textbf {\bibinfo {volume} {109}},\
+  \bibinfo {pages} {17807} (\bibinfo {year} {2012}{\natexlab{b}})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Shen}\ \emph {et~al.}(2010)\citenamefont {Shen},
+  \citenamefont {Kim},\ and\ \citenamefont {Wang}}]{Shen:2010df}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Shen}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Kim}}, \ and\
+  \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Wang}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {IEEE Trans. Neural Networks}\
+  }\textbf {\bibinfo {volume} {21}},\ \bibinfo {pages} {1524} (\bibinfo {year}
+  {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Shen}\ \emph {et~al.}(2008)\citenamefont {Shen},
+  \citenamefont {Welsh},\ and\ \citenamefont {Wang}}]{Shen:2008aa}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Shen}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Welsh}}, \ and\
+  \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Wang}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Advances in Neural Information
+  Processing Systems (NIPS)}\ }\textbf {\bibinfo {volume} {21}},\ \bibinfo
+  {pages} {1473} (\bibinfo {year} {2008})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Djurdjevac}\ \emph {et~al.}(2012)\citenamefont
+  {Djurdjevac}, \citenamefont {Sarich},\ and\ \citenamefont
+  {Sch\"{u}tte}}]{Schutte:2012dn}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Djurdjevac}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Sarich}},
+  \ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Sch\"{u}tte}},\
+  }\href {\doibase 10.1137/100798910} {\bibfield  {journal} {\bibinfo
+  {journal} {Multiscale Model. Simul.}\ }\textbf {\bibinfo {volume} {10}},\
+  \bibinfo {pages} {61} (\bibinfo {year} {2012})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Beauchamp}\ \emph {et~al.}(2011)\citenamefont
+  {Beauchamp}, \citenamefont {Bowman}, \citenamefont {Lane}, \citenamefont
+  {Maibaum}, \citenamefont {Haque},\ and\ \citenamefont
+  {Pande}}]{Beauchamp:2011he}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~A.}\ \bibnamefont
+  {Beauchamp}}, \bibinfo {author} {\bibfnamefont {G.~R.}\ \bibnamefont
+  {Bowman}}, \bibinfo {author} {\bibfnamefont {T.~J.}\ \bibnamefont {Lane}},
+  \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Maibaum}}, \bibinfo
+  {author} {\bibfnamefont {I.~S.}\ \bibnamefont {Haque}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {V.~S.}\ \bibnamefont {Pande}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {J. Chem. Theory Comput.}\
+  }\textbf {\bibinfo {volume} {7}},\ \bibinfo {pages} {3412} (\bibinfo {year}
+  {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Shaw}\ \emph {et~al.}(2010)\citenamefont {Shaw},
+  \citenamefont {Maragakis}, \citenamefont {Lindorff-Larsen}, \citenamefont
+  {Piana}, \citenamefont {Dror}, \citenamefont {Eastwood}, \citenamefont
+  {Bank}, \citenamefont {Jumper}, \citenamefont {Salmon}, \citenamefont
+  {Shan},\ and\ \citenamefont {Wriggers}}]{Shaw2010}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~E.}\ \bibnamefont
+  {Shaw}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Maragakis}},
+  \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Lindorff-Larsen}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Piana}}, \bibinfo
+  {author} {\bibfnamefont {R.~O.}\ \bibnamefont {Dror}}, \bibinfo {author}
+  {\bibfnamefont {M.~P.}\ \bibnamefont {Eastwood}}, \bibinfo {author}
+  {\bibfnamefont {J.~A.}\ \bibnamefont {Bank}}, \bibinfo {author}
+  {\bibfnamefont {J.~M.}\ \bibnamefont {Jumper}}, \bibinfo {author}
+  {\bibfnamefont {J.~K.}\ \bibnamefont {Salmon}}, \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Shan}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {W.}~\bibnamefont {Wriggers}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Science}\ }\textbf {\bibinfo {volume}
+  {330}},\ \bibinfo {pages} {341} (\bibinfo {year} {2010})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Lane}\ \emph {et~al.}(2011)\citenamefont {Lane},
+  \citenamefont {Bowman}, \citenamefont {Beauchamp}, \citenamefont {Voelz},\
+  and\ \citenamefont {Pande}}]{Lane:2011wj}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~J.}\ \bibnamefont
+  {Lane}}, \bibinfo {author} {\bibfnamefont {G.~R.}\ \bibnamefont {Bowman}},
+  \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Beauchamp}}, \bibinfo
+  {author} {\bibfnamefont {V.~A.}\ \bibnamefont {Voelz}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {V.~S.}\ \bibnamefont {Pande}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {J. Am. Chem. Soc.}\ }\textbf
+  {\bibinfo {volume} {133}},\ \bibinfo {pages} {18413} (\bibinfo {year}
+  {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Deuflhard}\ and\ \citenamefont
+  {Weber}(2005)}]{Deuflhard:2005cp}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Deuflhard}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Weber}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Linear
+  Algebra Appl.}\ }\textbf {\bibinfo {volume} {398}},\ \bibinfo {pages} {161}
+  (\bibinfo {year} {2005})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Schwantes}\ and\ \citenamefont
+  {Pande}(2013)}]{Schwantes2013Improvements}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~R.}\ \bibnamefont
+  {Schwantes}}\ and\ \bibinfo {author} {\bibfnamefont {V.~S.}\ \bibnamefont
+  {Pande}},\ }\href {\doibase 10.1021/ct300878a} {\bibfield  {journal}
+  {\bibinfo  {journal} {J. Chem. Theory Comput.}\ }\textbf {\bibinfo {volume}
+  {9}},\ \bibinfo {pages} {2000} (\bibinfo {year} {2013})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Schwantes}\ \emph {et~al.}(2013)\citenamefont
+  {Schwantes}, \citenamefont {McGibbon},\ and\ \citenamefont
+  {Pande}}]{Schwantes2013Optimal}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~R.}\ \bibnamefont
+  {Schwantes}}, \bibinfo {author} {\bibfnamefont {R.~T.}\ \bibnamefont
+  {McGibbon}}, \ and\ \bibinfo {author} {\bibfnamefont {V.~S.}\ \bibnamefont
+  {Pande}},\ }\href@noop {} {\enquote {\bibinfo {title} {Optimal parameter
+  selection in markov state models for biomolecular conformational dynamics},}\
+  } (\bibinfo {year} {2013}),\ \bibinfo {note} {in preparation}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Schwarz}(1978)}]{Schwartz78Estimating}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Schwarz}},\ }\href {\doibase 10.2307/2958889} {\bibfield  {journal}
+  {\bibinfo  {journal} {Ann. Stat.}\ }\textbf {\bibinfo {volume} {6}},\
+  \bibinfo {pages} {461} (\bibinfo {year} {1978})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rabiner}\ and\ \citenamefont
+  {Juang}(1986)}]{Rabiner1986Introduction}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Rabiner}}\ and\ \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Juang}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {ASSP
+  Magazine, IEEE}\ }\textbf {\bibinfo {volume} {3}},\ \bibinfo {pages} {4}
+  (\bibinfo {year} {1986})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kannan}\ \emph {et~al.}(1997)\citenamefont {Kannan},
+  \citenamefont {Lovász},\ and\ \citenamefont {Simonovits}}]{Kannan97}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Kannan}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Lovász}}, \
+  and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Simonovits}},\
+  }\href {\doibase 10.1002/(SICI)1098-2418(199708)11:1<1::AID-RSA1>3.0.CO;2-X}
+  {\bibfield  {journal} {\bibinfo  {journal} {Random Structures \& Algorithms}\
+  }\textbf {\bibinfo {volume} {11}},\ \bibinfo {pages} {1} (\bibinfo {year}
+  {1997})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Simonovits}(2003)}]{Simonovits03}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Simonovits}},\ }\href
+  {http://link.springer.com/article/10.1007%2Fs10107-003-0447-x} {\bibfield
+  {journal} {\bibinfo  {journal} {Math. Program.}\ }\textbf {\bibinfo {volume}
+  {97}},\ \bibinfo {pages} {337} (\bibinfo {year} {2003})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Lov{\'a}sz}\ and\ \citenamefont
+  {Vempala}(2006)}]{Lovasz03}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Lov{\'a}sz}}\ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Vempala}},\ }\href
+  {http://www.sciencedirect.com/science/article/pii/S0022000005000966}
+  {\bibfield  {journal} {\bibinfo  {journal} {J. Comput. System Sci.}\ }\textbf
+  {\bibinfo {volume} {72}},\ \bibinfo {pages} {392 } (\bibinfo {year}
+  {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bowman}\ \emph {et~al.}(2010)\citenamefont {Bowman},
+  \citenamefont {Ensign},\ and\ \citenamefont {Pande}}]{Bowman2010Enhanced}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~R.}\ \bibnamefont
+  {Bowman}}, \bibinfo {author} {\bibfnamefont {D.~L.}\ \bibnamefont {Ensign}},
+  \ and\ \bibinfo {author} {\bibfnamefont {V.~S.}\ \bibnamefont {Pande}},\
+  }\href {\doibase 10.1021/ct900620b} {\bibfield  {journal} {\bibinfo
+  {journal} {J. Chem. Theory Comput.}\ }\textbf {\bibinfo {volume} {6}},\
+  \bibinfo {pages} {787} (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Weber}\ and\ \citenamefont
+  {Pande}(2011)}]{Weber2011Characterization}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~K.}\ \bibnamefont
+  {Weber}}\ and\ \bibinfo {author} {\bibfnamefont {V.~S.}\ \bibnamefont
+  {Pande}},\ }\href {\doibase 10.1021/ct2004484} {\bibfield  {journal}
+  {\bibinfo  {journal} {Journal of Chemical Theory and Computation}\ }\textbf
+  {\bibinfo {volume} {7}},\ \bibinfo {pages} {3405} (\bibinfo {year}
+  {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kubelka}\ \emph {et~al.}(2006)\citenamefont
+  {Kubelka}, \citenamefont {Chiu}, \citenamefont {Davies}, \citenamefont
+  {Eaton},\ and\ \citenamefont {Hofrichter}}]{Kubelka2006Sub}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Kubelka}}, \bibinfo {author} {\bibfnamefont {T.~K.}\ \bibnamefont {Chiu}},
+  \bibinfo {author} {\bibfnamefont {D.~R.}\ \bibnamefont {Davies}}, \bibinfo
+  {author} {\bibfnamefont {W.~A.}\ \bibnamefont {Eaton}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Hofrichter}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {J. Mol. Biol.}\ }\textbf
+  {\bibinfo {volume} {359}},\ \bibinfo {pages} {546} (\bibinfo {year}
+  {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hamilton}(1989)}]{Hamilton1989New}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~D.}\ \bibnamefont
+  {Hamilton}},\ }\href {http://dx.doi.org/10.2307/1912559} {\bibfield
+  {journal} {\bibinfo  {journal} {Econometrica}\ ,\ \bibinfo {pages} {357}}
+  (\bibinfo {year} {1989})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hamilton}(1990)}]{Hamilton1990Analysis}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~D.}\ \bibnamefont
+  {Hamilton}},\ }\href {http://dx.doi.org/10.1016/0304-4076(90)90093-9}
+  {\bibfield  {journal} {\bibinfo  {journal} {J. Econometrics}\ }\textbf
+  {\bibinfo {volume} {45}},\ \bibinfo {pages} {39} (\bibinfo {year}
+  {1990})}\BibitemShut {NoStop}%
+\end{thebibliography}%

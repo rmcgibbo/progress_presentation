@@ -44,7 +44,7 @@ title: Biology at the Atomic Length Scale
 </center>
 
 <footer class="source">
-G.R Mallacci et. al., Brain 122, 1823 (1999).
+G.R Mallacci et. al., <i>Brain</i> 122, 1823 (1999).
 </footer>
 
 ---
@@ -61,7 +61,7 @@ title: Molecular Dynamics
 - Numerically integrate the equations of motion
 
 <footer class="source">
-W. D. Cornell et. al., J. Am. Chem. Soc. 117, 5179 (1995).
+W. D. Cornell et. al., <i>J. Am. Chem. Soc.</i> 117, 5179 (1995).
 </footer>
 
 ---
@@ -142,7 +142,7 @@ $$ \max_{\mathbf{X},\rho} \left[ \alpha \rho - \frac{1}{N} \sum_i^N \lambda \lef
 - The matrix $\mathbf{X}$ is constrained to be positive semidefinite.
 - Relatively efficient optimization by gradient descent with rank-1 updates naturally maintains p.s.d. constraint.
 
-<footer class="source">Shen, C.; Kim, J.; Wang, L. Scalable large-margin Mahalanobis distance metric learning. IEEE Trans. Neural Networks 2010, 21, 1524–1530</footer>
+<footer class="source">Shen, C.; Kim, J.; Wang, L. <i>IEEE Trans. Neural Networks</i> 21, 1524 (2010)</footer>
 
 ---
 title: KDML Model System
@@ -152,7 +152,7 @@ class: img-top-center
 
 2D Brownian dynamics, where vertical diffusion constant is 10x greater than the horizontal diffusion constant.
 
-<footer class="source">McGibbon, R. T.; Pande, V. S.; J. Chem. Theory Comput., 9 2900 (2013) 10.1021/ct400132h </footer>
+<footer class="source">McGibbon, R. T.; Pande, V. S.; <i>J. Chem. Theory Comput.</i> 9, 2900 (2013)</footer>
 
 ---
 title: KDML Model System
@@ -162,7 +162,7 @@ class: img-top-center
 
 KDML distance metric gives converged behavior with fewer states.
 
-<footer class="source">McGibbon, R. T.; Pande, V. S.; J. Chem. Theory Comput., 9 2900 (2013) 10.1021/ct400132h </footer>
+<footer class="source">McGibbon, R. T.; Pande, V. S. <i>J. Chem. Theory Comput.</i> 9 2900 (2013)</footer>
 
 ---
 title: Fip35 WW Domain
@@ -198,6 +198,19 @@ subtitle: MSM-accelerated Distributed Molecular Dynamics
 - Starting conditions determined on-the-fly by MSMBuilder.
 
 <footer class="source">McGibbon, R.T.; Kiss, G.; Harrigan, M. P; Pande, V. S., <i>in preparation</i></footer>
+
+---
+title: Current projects
+subtitle: MSM-accelerated Distributed Molecular Dynamic
+
+<center style="margin-top:-80px; margin-left:-60px">
+<video width="1100" height="500" controls loop>
+  <source src="videos/msmaccelerator.combine3.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</center>
+
+<footer class="source">Simulations and video by M. P. Harrigan</footer>
 
 ---
 title: Current Projects

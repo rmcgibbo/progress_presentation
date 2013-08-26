@@ -1,0 +1,1322 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Randomized high-dimensional volume calculations
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article {Kannan97,
+  author = {Kannan, Ravi and Lovász, László and Simonovits, Miklós},
+  title = {Random walks and an O*(n5) volume algorithm for convex bodies},
+  journal = {Random Structures \& Algorithms},
+  volume = {11},
+  number = {1},
+  publisher = {Wiley Subscription Services, Inc., A Wiley Company},
+  issn = {1098-2418},
+  doi = {10.1002/(SICI)1098-2418(199708)11:1<1::AID-RSA1>3.0.CO;2-X},
+  pages = {1--50},
+  year = {1997},
+  url={{http://onlinelibrary.wiley.com/doi/10.1002/(SICI)1098-2418(199708)11:1%3C1::AID-RSA1%3E3.0.CO;2-X/abstract}}
+}
+
+@article{Simonovits03,
+  author    = {Mikl{\'o}s Simonovits},
+  title     = {How to compute the volume in high dimension?},
+  journal   = {Math. Program.},
+  volume    = {97},
+  number    = {1-2},
+  year      = {2003},
+  pages     = {337-374},
+  ee        = {http://dx.doi.org/10.1007/s10107-003-0447-x},
+  bibsource = {DBLP, http://dblp.uni-trier.de},
+  url={http://link.springer.com/article/10.1007%2Fs10107-003-0447-x}
+}
+
+@article{Lovasz03,
+  title = "Simulated annealing in convex bodies and an $O^*(n^4)$ volume algorithm",
+  journal = "J. Comput. System Sci.",
+  volume = "72",
+  number = "2",
+  pages = "392 - 417",
+  year = "2006",
+  author = {L{\'a}szl{\'o} Lov{\'a}sz and Santosh Vempala},
+  url="http://www.sciencedirect.com/science/article/pii/S0022000005000966"
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Introduction: experimental work and stuff
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{Kim2008Real,
+  author = {Kim, Seung Joong and Born, Benjamin and Havenith, Martina and Gruebele, Martin},
+  title = {Real-Time Detection of Protein–Water Dynamics upon Protein Folding by Terahertz Absorption Spectroscopy},
+  journal = {Angew. Chem. Int. Ed.},
+  volume = {47},
+  number = {34},
+  issn = {1521-3773},
+  url = {http://dx.doi.org/10.1002/anie.200802281},
+  doi = {10.1002/anie.200802281},
+  pages = {6486--6489},
+  year = {2008}
+}
+
+@article{Dobson2003Protein,
+   author="Dobson, C. M. ",
+   title="{{P}rotein folding and misfolding}",
+   journal="Nature",
+   year="2003",
+   volume="426",
+   number="6968",
+   pages="884--890",
+   month="Dec",
+   url="http://www.nature.com/nature/journal/v426/n6968/full/nature02261.html"
+}
+
+@article{Zhang2011Direct,
+  author = {Zhang, Xin and Lam, Vinh Q. and Mou, Yun and Kimura, Tetsunari and Chung, Jaeyoon and Chandrasekar, Sowmya and Winkler, Jay R. and Mayo, Stephen L. and Shan, Shu-ou},
+  title = {Direct visualization reveals dynamics of a transient intermediate during protein assembly},
+  volume = {108},
+  number = {16},
+  pages = {6450-6455},
+  year = {2011},
+  doi = {10.1073/pnas.1019051108},
+  URL = {http://www.pnas.org/content/108/16/6450.abstract},
+  journal = {Proc. Natl. Acad. Sci. U.S.A.}
+}
+
+@article{Cosa2006Evidence,
+  author = {Cosa, Gonzalo and Zeng, Yining and Liu, Hsiao-Wei and Landes, Christy F. and Makarov, Dmitrii E. and Musier-Forsyth, Karin and Barbara, Paul F.},
+  title = {Evidence for Non-Two-State Kinetics in the Nucleocapsid Protein Chaperoned Opening of DNA Hairpins},
+  journal = {J. Phys. Chem. B},
+  volume = {110},
+  number = {5},
+  pages = {2419-2426},
+  year = {2006},
+  doi = {10.1021/jp054189i},
+  URL = {http://pubs.acs.org/doi/abs/10.1021/jp054189i}
+}
+
+@article{Austin1975Dynamics,
+  author = {Austin, R. H. and Beeson, K. W. and Eisenstein, L. and Frauenfelder, H. and Gunsalus, I. C.},
+  title = {Dynamics of ligand binding to myoglobin},
+  journal = {Biochemistry},
+  volume = {14},
+  number = {24},
+  pages = {5355--5373},
+  year = {1975},
+  doi = {10.1021/bi00695a021},
+  URL = {http://pubs.acs.org/doi/abs/10.1021/bi00695a021}
+}
+
+@article{Bahar2007Intrinsic,
+  title = "Intrinsic dynamics of enzymes in the unbound state and relation to allosteric regulation",
+  journal = "Curr. Opin. Struct. Biol.",
+  volume = "17",
+  number = "6",
+  pages = "633 - 640",
+  year = "2007",
+  issn = "0959-440X",
+  doi = "http://dx.doi.org/10.1016/j.sbi.2007.09.011",
+  url = "http://www.sciencedirect.com/science/article/pii/S0959440X07001534",
+  author = "Ivet Bahar and Chakra Chennubhotla and Dror Tobi"
+}
+
+@article{Tzeng2011Protein,
+  title = "Protein dynamics and allostery: an \{NMR\} view ",
+  journal = "Curr. Opin. Struct. Biol.",
+  volume = "21",
+  number = "1",
+  pages = "62 - 67",
+  year = "2011",
+  note = "",
+  issn = "0959-440X",
+  doi = "http://dx.doi.org/10.1016/j.sbi.2010.10.007",
+  url = "http://www.sciencedirect.com/science/article/pii/S0959440X10001703",
+  author = "Shiou-Ru Tzeng and Charalampos G Kalodimos"
+}
+
+
+@article{Mertens2010Structural,
+  title = "Structural characterization of proteins and complexes using small-angle X-ray solution scattering ",
+  journal = "J. Struct. Biol.",
+  volume = "172",
+  number = "1",
+  pages = "128 - 141",
+  year = "2010",
+  issn = "1047-8477",
+  doi = "http://dx.doi.org/10.1016/j.jsb.2010.06.012",
+  url = "http://www.sciencedirect.com/science/article/pii/S1047847710001905",
+  author = "Haydyn D.T. Mertens and Dmitri I. Svergun"
+}
+
+
+% Introduce the Fip35 WW domain
+@article{Liu2008Experimental,
+  author = {Liu, Feng and Du, Deguo and Fuller, Amelia A. and Davoren, Jennifer E. and Wipf, Peter and Kelly, Jeffery W. and Gruebele, Martin},
+  title = {An experimental survey of the transition between two-state and downhill protein folding scenarios},
+  volume = {105},
+  number = {7},
+  pages = {2369-2374},
+  year = {2008},
+  doi = {10.1073/pnas.0711908105},
+  journal={Proc. Natl. Acad. Sci. U.S.A.},
+  url={http://www.pnas.org/content/105/7/2369.long}
+}
+
+
+@article{Lane2011Markov,
+  author="Lane, T. J.  and Bowman, G. R.  and Beauchamp, K.  and Voelz, V. A.  and Pande, V. S. ",
+  title="{{M}arkov state model reveals folding and functional dynamics in ultra-long {M}{D} trajectories}",
+  journal="J. Am. Chem. Soc.",
+  year="2011",
+  volume="133",
+  number="45",
+  pages="18413--18419",
+  url="http://pubs.acs.org/doi/abs/10.1021/ja207470h"
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Simulation methods, Hardware, MD
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{Eastman2013OpenMM,
+  author = {Eastman, Peter and Friedrichs, Mark S. and Chodera, John D. and Radmer, Randall J. and Bruns, Christopher M. and Ku, Joy P. and Beauchamp, Kyle A. and Lane, Thomas J. and Wang, Lee-Ping and Shukla, Diwakar and Tye, Tony and Houston, Mike and Stich, Timo and Klein, Christoph and Shirts, Michael R. and Pande, Vijay S.},
+  title = {OpenMM 4: A Reusable, Extensible, Hardware Independent Library for High Performance Molecular Simulation},
+  journal = {J. Chem. Theory Comput.},
+  volume = {9},
+  number = {1},
+  pages = {461-469},
+  year = {2013},
+  doi = {10.1021/ct300857j},
+  URL = {http://pubs.acs.org/doi/abs/10.1021/ct300857j}
+}
+
+
+@article{Shirts2000Screen,
+  author="Shirts, M.  and Pande, V. S. ",
+  title="{{S}creen {S}avers of the {W}orld {U}nite!}",
+  journal="Science",
+  year="2000",
+  volume="290",
+  Number="5498",
+  page="1903--1904",
+  Month="Dec",
+  url="http://www.sciencemag.org/content/290/5498/1903.short"
+}
+
+@INPROCEEDINGS{Shaw2009Millisecond,
+  author={Shaw, D.E. and Dror, R.O. and Salmon, J.K. and Grossman, J.P. and Mackenzie, K.M. and Bank, J.A. and Young, C. and Deneroff, M.M. and Batson, B. and Bowers, K.J. and Chow, E. and Eastwood, M.P. and Ierardi, D.J. and Klepeis, J.L. and Kuskin, J.S. and Larson, R.H. and Lindorff-Larsen, K. and Maragakis, P. and Moraes, M.A. and Piana, S. and Shan, Y. and Towles, B.},
+  booktitle={High Performance Computing Networking, Storage and Analysis, Proceedings of the Conference on},
+  title={Millisecond-scale molecular dynamics simulations on Anton},
+  year={2009},
+  pages={1-11},
+  doi={10.1145/1654059.1654126}
+}
+
+@article{Hess2008PLINCS,
+  author = {Hess, Berk},
+  title = {P-LINCS: A Parallel Linear Constraint Solver for Molecular Simulation},
+  journal = {J. Chem. Theory Comput.},
+  volume = {4},
+  number = {1},
+  pages = {116-122},
+  year = {2008},
+  doi = {10.1021/ct700200b},
+  URL = {http://pubs.acs.org/doi/abs/10.1021/ct700200b}
+}
+
+@article{Best2010Coordinate,
+  author = {Best, Robert B. and Hummer, Gerhard},
+  title = {Coordinate-dependent diffusion in protein folding},
+  volume = {107},
+  number = {3},
+  pages = {1088-1093},
+  year = {2010},
+  doi = {10.1073/pnas.0910390107},
+  URL = {http://www.pnas.org/content/107/3/1088.abstract},
+  journal = {Proc. Natl. Acad. Sci. U.S.A.}
+}
+
+@article{Freddolino2010Challenges,
+   author="Freddolino, P. L.  and Harrison, C. B.  and Liu, Y.  and Schulten, K. ",
+   title="{{C}hallenges in protein folding simulations: {T}imescale, representation, and analysis}",
+   journal="Nat. Phys.",
+   year="2010",
+   volume="6",
+   number="10",
+   pages="751--758",
+   url="http://www.nature.com/nphys/journal/v6/n10/full/nphys1713.html"
+}
+
+@article{Lane2013Milliseconds,
+  title = "To milliseconds and beyond: challenges in the simulation of protein folding ",
+  journal = "Curr. Opin. Struct. Biol.",
+  volume = "23",
+  number = "1",
+  pages = "58 - 65",
+  year = "2013",
+  issn = "0959-440X",
+  doi = "http://dx.doi.org/10.1016/j.sbi.2012.11.002",
+  url = "http://www.sciencedirect.com/science/article/pii/S0959440X12001820",
+  author = "Thomas J Lane and Diwakar Shukla and Kyle A Beauchamp and Vijay S Pande"
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MSMs: background
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{Pande2010Everything,
+  title = "Everything you wanted to know about Markov state models but were afraid to ask",
+  journal = "Methods",
+  volume = "52",
+  number = "1",
+  pages = "99 - 105",
+  year = "2010",
+  issn = "1046-2023",
+  doi = "10.1016/j.ymeth.2010.06.002",
+  url = "http://www.sciencedirect.com/science/article/pii/S1046202310001568",
+  author = "Vijay S. Pande and Kyle Beauchamp and Gregory R. Bowman"
+}
+
+@article{Beauchamp2012Simple,
+  author = {Beauchamp, Kyle A. and McGibbon, Robert and Lin, Yu-Shan and Pande, Vijay S.},
+  title = {Simple few-state models reveal hidden complexity in protein folding},
+  volume = {109},
+  number = {44},
+  pages = {17807-17813},
+  year = {2012},
+  doi = {10.1073/pnas.1201810109},
+  url = {http://www.pnas.org/content/109/44/17807.abstract},
+  journal = {Proc. Natl. Acad. Sci. U.S.A.}
+}
+
+@article{Prinz2011Markov,
+  author = {Jan-Hendrik Prinz and Hao Wu and Marco Sarich and Bettina Keller and Martin Senne and Martin Held and John D. Chodera and Christof Schutte and Frank Noe},
+  collaboration = {},
+  title = {Markov models of molecular kinetics: Generation and validation},
+  publisher = {AIP},
+  year = {2011},
+  journal = {J. Chem. Phys.},
+  volume = {134},
+  number = {17},
+  eid = {174105},
+  numpages = {23},
+  pages = {174105},
+  url = {http://link.aip.org/link/?JCP/134/174105/1},
+  doi = {10.1063/1.3565032}
+}
+
+@article{McGibbon2013Learning,
+  author = {McGibbon, Robert T. and Pande, Vijay S.},
+  title = {Learning Kinetic Distance Metrics for Markov State Models of Protein Conformational Dynamics},
+  journal = {J. Chem. Theory Comput.},
+  volume = {9},
+  number = {7},
+  pages = {2900-2906},
+  year = {2013},
+  doi = {10.1021/ct400132h},
+  url = {http://pubs.acs.org/doi/abs/10.1021/ct400132h}
+}
+
+@article{Bowman2013Quantitative,
+  author = {Gregory R. Bowman and Luming Meng and Xuhui Huang},
+  title = {Quantitative comparison of alternative methods for coarse-graining biological networks},
+  publisher = {AIP},
+  year = {2013},
+  journal = {J. Chem. Phys.},
+  volume = {139},
+  number = {12},
+  eid = {121905},
+  numpages = {9},
+  pages = {121905},
+  url = {http://link.aip.org/link/?JCP/139/121905/1},
+  doi = {10.1063/1.4812768}
+}
+
+@article{Schwantes2013Improvements,
+  author = {Schwantes, Christian R. and Pande, Vijay S.},
+  title = {Improvements in Markov State Model Construction Reveal Many Non-Native Interactions in the Folding of NTL9},
+  journal = {J. Chem. Theory Comput.},
+  volume = {9},
+  number = {4},
+  pages = {2000-2009},
+  year = {2013},
+  doi = {10.1021/ct300878a},
+  URL = {http://pubs.acs.org/doi/abs/10.1021/ct300878a}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Shaw Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{Shaw2010Atomic,
+  author = {Shaw, David E. and Maragakis, Paul and Lindorff-Larsen, Kresten and Piana, Stefano and Dror, Ron O. and Eastwood, Michael P. and Bank, Joseph A. and Jumper, John M. and Salmon, John K. and Shan, Yibing and Wriggers, Willy}, 
+  title = {Atomic-Level Characterization of the Structural Dynamics of Proteins},
+  volume = {330}, 
+  number = {6002}, 
+  pages = {341-346}, 
+  year = {2010}, 
+  doi = {10.1126/science.1187409}, 
+  URL = {http://www.sciencemag.org/content/330/6002/341.abstract}, 
+  journal = {Science} 
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Likelihood stuff
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+@article{Kellogg2012Evaluation,
+  author = {Kellogg, Elizabeth H. and Lange, Oliver F. and Baker, David},
+  title = {Evaluation and Optimization of Discrete State Models of Protein Folding},
+  journal = {J. Phys. Chem. B},
+  volume = {116},
+  number = {37},
+  pages = {11405-11413},
+  year = {2012},
+  doi = {10.1021/jp3044303},
+  url= {http://pubs.acs.org/doi/abs/10.1021/jp3044303}
+}
+
+@book{Hastie01Elements,
+  address = {New York, NY, USA},
+  author = {Hastie, Trevor and Tibshirani, Robert and Friedman, Jerome},
+  publisher = {Springer New York Inc.},
+  series = {Springer Series in Statistics},
+  title = {The Elements of Statistical Learning},
+  year = {2001}
+}
+
+@article{Gelfand94Bayesian,
+  jstor_articletype = {research-article},
+  title = {Bayesian Model Choice: Asymptotics and Exact Calculations},
+  author = {Gelfand, A. E. and Dey, D. K.},
+  journal = {J. R. Statistic. Soc. B},
+  jstor_issuetitle = {},
+  volume = {56},
+  number = {3},
+  jstor_formatteddate = {1994},
+  pages = {pp. 501-514},
+  url = {http://www.jstor.org/stable/2346123},
+  ISSN = {00359246},
+  language = {English},
+  year = {1994},
+  publisher = {Wiley for the Royal Statistical Society}
+}
+
+@article{Schwartz78Estimating,
+  author = {Schwarz, Gideon},
+  doi = {10.2307/2958889},
+  issn = {00905364},
+  journal = {Ann. Stat.},
+  number = {2},
+  pages = {461--464},
+  publisher = {Institute of Mathematical Statistics},
+  title = {{Estimating the Dimension of a Model}},
+  url = {http://dx.doi.org/10.2307/2958889},
+  volume = {6},
+  year = {1978}
+}
+
+@article{Liddle2007Information,
+  author = {Liddle, A. R.},
+  citeulike-article-id = {10258926},
+  journal = {Mon. Not. R. Astron. Soc. Lett.},
+  number = {1},
+  pages = {L74--L78},
+  posted-at = {2012-01-24 09:59:34},
+  priority = {2},
+  publisher = {Wiley Online Library},
+  title = {{Information criteria for astrophysical model selection}},
+  volume = {377},
+  year = {2007},
+  url={http://mnrasl.oxfordjournals.org/content/377/1/L74.full}
+}
+
+%% Created using Papers on Thu, 19 Jul 2012.
+%% http://mekentosj.com/papers/
+
+@article{Luttmann:2009jf,
+author = {Luttmann, Edgar and Ensign, Daniel L and Vaidyanathan, Vishal and Houston, Mike and Rimon, Noam and {\O}land, Jeppe and Jayachandran, Guha and Friedrichs, Mark and Pande, Vijay S},
+title = {{Accelerating molecular dynamic simulation on the cell processor and Playstation 3.}},
+journal = {J. Comput. Chem.},
+year = {2009},
+volume = {30},
+number = {2},
+pages = {268--274},
+month = jan
+}
+
+
+@article{Muff:2008un,
+author = {Muff, Stefanie and Caflisch, Amedeo},
+title = {{Kinetic analysis of molecular dynamics simulations reveals changes in the denatured state and switch of folding pathways upon single-point mutation of a beta-sheet miniprotein.}},
+journal = {Proteins Struct. Funct. Bioinf.},
+year = {2008},
+volume = {70},
+number = {4},
+pages = {1185--1195},
+month = mar
+}
+
+@article{Kim:1996,
+author = {Huber, G. A. and Kim, S.},
+title = {Weighted-ensemble Brownian dynamics simulations for protein association reactions},
+journal = {Biophys. J.},
+year = {1996},
+volume = {70},
+issue = {1},
+pages = {97 -- 110},
+}
+
+@book{Darve:2012,
+author = {Darve, Eric and Ryu, E},
+editor = {Schlick, Tamar},
+subtitle = {Volume 1},
+publisher  ="The Royal Society of Chemistry",
+series  ="RSC Biomolecular Sciences",
+title = {Computing reaction rates in bio-molecular systems using discrete macrostates},
+pages = {138-206},
+journal = {Innovations in Biomolecular Modeling and Simulations},
+year = {2012},
+volume = {1},
+}
+
+@article{Zuckerman:2010,
+author = {Bhatt, Divesh and Zuckerman, Daniel M.},
+title = {Heterogeneous path ensembles for conformational transitions in semiatomistic models of adenylate kinase},
+journal = {J. Chem. Theory Comput.},
+volume = {6},
+number = {11},
+pages = {3527-3539},
+year = {2010},
+doi = {10.1021/ct100406t},
+URL = {http://pubs.acs.org/doi/abs/10.1021/ct100406t}
+}
+
+@article{Lin:2012aa,
+title={Investigating how peptide length and a pathogenic mutation modify the structural ensemble of amyloid beta monomer.},
+author={Lin, Y. and Bowman, G.R. and Beauchamp, K.A. and Pande, V.S.},
+journal={Biophys. J.},
+volume={102},
+number={2},
+pages={315-24},
+year={2012},
+abstract={The aggregation of amyloid beta (Aβ) peptides plays an important role in the development of Alzheimer's disease. Despite extensive effort, it has been difficult to characterize the secondary and tertiary structure of the Aβ monomer, the starting point for aggregation, due to its hydrophobicity and high aggregation propensity. Here, we employ extensive molecular dynamics simulations with atomistic protein and water models to determine structural ensembles for Aβ(42), Aβ(40), and Aβ(42)-E22K (the Italian mutant) monomers in solution. Sampling of a total of >700 microseconds in all-atom detail with explicit solvent enables us to observe the effects of peptide length and a pathogenic mutation on the disordered Aβ monomer structural ensemble. Aβ(42) and Aβ(40) have crudely similar characteristics but reducing the peptide length from 42 to 40 residues reduces β-hairpin formation near the C-terminus. The pathogenic Italian E22K mutation induces helix formation in the region of residues 20-24. This structural alteration may increase helix-helix interactions between monomers, resulting in altered mechanism and kinetics of Aβ oligomerization. }
+}
+
+@article{Karplus:2002wt,
+    abstract = {{Molecular dynamics simulations are important tools for understanding the physical basis of the structure and function of biological macromolecules. The early view of proteins as relatively rigid structures has been replaced by a dynamic model in which the internal motions and resulting conformational changes play an essential role in their function. This review presents a brief description of the origin and early uses of biomolecular simulations. It then outlines some recent studies that illustrate the utility of such simulations and closes with a discussion of their ever-increasing potential for contributing to biology.}},
+    address = {Department of Chemistry and Chemical Biology, Harvard University, Cambridge, Massachusetts 02138, USA. marci@tammy.harvard.edu},
+    author = {Karplus, Martin and McCammon, J. Andrew},
+    day = {01},
+    doi = {10.1038/nsb0902-646},
+    issn = {1072-8368},
+    journal = {Nat. Struct. Mol. Biol.},
+    keywords = {md, review},
+    month = sep,
+    number = {9},
+    pages = {646--652},
+    posted-at = {2009-04-24 01:01:32},
+    priority = {2},
+    publisher = {Nature Publishing Group},
+    title = {{Molecular dynamics simulations of biomolecules}},
+    url = {http://dx.doi.org/10.1038/nsb0902-646},
+    volume = {9},
+    year = {2002}
+}
+@book{vanKampen:2007ug,
+author = {Van Kampen, N. G.},
+day = {07},
+edition = {3},
+howpublished = {Paperback},
+isbn = {0444529659},
+keywords = {stochastic-processes},
+month = may,
+posted-at = {2007-03-18 18:03:52},
+priority = {2},
+publisher = {North Holland},
+title = {{Stochastic Processes in Physics and Chemistry}},
+url = {http://www.amazon.com/exec/obidos/redirect?tag=citeulike07-20\&path=ASIN/0444529659},
+year = {2007}
+}
+
+@author{Qi:2009:ESM:1553374.1553482,
+ author = {Qi, Guo-Jun and Tang, Jinhui and Zha, Zheng-Jun and Chua, Tat-Seng and Zhang, Hong-Jiang},
+ title = {An efficient sparse metric learning in high-dimensional space via l1-penalized log-determinant regularization},
+ journal = {Proceedings of the 26th Annual International Conference on Machine Learning},
+ volume = {26},
+ series = {ICML '09},
+ year = {2009},
+ isbn = {978-1-60558-516-1},
+ location = {Montreal, Quebec, Canada},
+ pages = {841--848},
+ numpages = {8},
+ url = {http://doi.acm.org/10.1145/1553374.1553482},
+ doi = {10.1145/1553374.1553482},
+ acmid = {1553482},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@article{Zwanzig:1961aa,
+author = {Zwanzig, Robert},
+title = {{Memory effects in irreversible thermodynamics}},
+journal = {Phys. Rev.},
+year = {1961},
+volume = {124},
+number = {4},
+pages = {983--992},
+month = nov
+}
+
+@article{Mori1965:aa,
+author = {Mori, H.},
+title = {{Transport, Collective Motion, and Brownian Motion}},
+journal = {Prog. Theor. Phys.},
+year = {1965},
+volume = {33},
+pages = {423--455},
+number = {3},
+}
+
+@article{Shaw:2008uq,
+ author = {Shaw, David E. and Deneroff, Martin M. and Dror, Ron O. and Kuskin, Jeffrey S. and Larson, Richard H. and Salmon, John K. and Young, Cliff and Batson, Brannon and Bowers, Kevin J. and Chao, Jack C. and Eastwood, Michael P. and Gagliardo, Joseph and Grossman, J. P. and Ho, C. Richard and Ierardi, Douglas J. and Kolossv\'{a}ry, Istv\'{a}n and Klepeis, John L. and Layman, Timothy and McLeavey, Christine and Moraes, Mark A. and Mueller, Rolf and Priest, Edward C. and Shan, Yibing and Spengler, Jochen and Theobald, Michael and Towles, Brian and Wang, Stanley C.},
+ title = {Anton, a special-purpose machine for molecular dynamics simulation},
+ journal = {Commun. ACM},
+ issue_date = {July 2008},
+ volume = {51},
+ number = {7},
+ month = jul,
+ year = {2008},
+ issn = {0001-0782},
+ pages = {91--97},
+ numpages = {7},
+ url = {http://doi.acm.org/10.1145/1364782.1364802},
+ doi = {10.1145/1364782.1364802},
+ acmid = {1364802},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@article{Bacallado:2011wo,
+author = {Bacallado, Sergio},
+title = {{Bayesian analysis of variable-order, reversible Markov chains}},
+journal = {Ann. Stat.},
+year = {2011},
+volume = {39},
+number = {2},
+pages = {838--864},
+month = apr
+}
+
+
+@article{Svishchev:1994bv,
+author = {Svishchev, Igor and Kusalik, Pater},
+title = {{Crystallization of Liquid Water in a Molecular Dynamics Simulation}},
+journal = {Phys. Rev. Lett.},
+year = {1994},
+volume = {73},
+number = {7},
+pages = {975--978},
+month = aug
+}
+
+@article{Cossio:2011jy,
+author = {Cossio, Pilar and Laio, Alessandro and Pietrucci, Fabio},
+title = {{Which similarity measure is better for analyzing protein structures in a molecular dynamics trajectory?}},
+journal = {Phys. Chem. Chem. Phys.},
+year = {2011},
+volume = {13},
+number = {22},
+pages = {10421--10425},
+month = jun
+}
+
+@article{Zhou:2012fr,
+author = {Zhou, Ting and Caflisch, Amedeo},
+title = {Distribution of reciprocal of interatomic distances: a fast structural metric},
+journal = {J. Chem. Theory Comput.},
+volume = {8},
+number = {8},
+pages = {2930-2937},
+year = {2012},
+doi = {10.1021/ct3003145},
+URL = {http://pubs.acs.org/doi/abs/10.1021/ct3003145}
+}
+
+
+@article{shen:2008aa,
+author    = {Chunhua Shen and
+             Alan Welsh and
+             Lei Wang},
+title     = {PSDBoost: matrix-generation linear programming for positive
+             semidefinite matrices learning},
+journal = {Advances in Neural Information Processing Systems (NIPS)},
+year      = {2008},
+volume = {21},
+pages     = {1473-1480},
+ee        = {http://books.nips.cc/papers/files/nips21/NIPS2008_0586.pdf},
+crossref  = {DBLP:conf/nips/2008},
+bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@article{Shirts:2000du,
+author = {Shirts, M and Pande, V S},
+title = {{Screen savers of the world unite!}},
+journal = {Science},
+year = {2000},
+volume = {290},
+number = {5498},
+pages = {1903--1904},
+month = dec
+}
+
+@article{Hess:2008db,
+author = {Hess, Berk and Kutzner, Carsten and van der Spoel, David and Lindahl, Erik},
+title = {{GROMACS 4: Algorithms for highly efficient, load-balanced, and scalable molecular simulation}},
+journal = {J. Chem. Theory Comput.},
+year = {2008},
+volume = {4},
+number = {3},
+pages = {435--447},
+month = mar
+}
+
+@article{Phillips:2005ts,
+author = {Phillips, J.C. and Braun, R. and Wang, W and Gumbart, J. and Tajkhorshid, E. and Villa, E. and Chipot, C. and Skeel, R.D. and Kale, L. and Schulten, K.},
+title = {{Scalable molecular dynamics with NAMD}},
+journal = {J. Comput. Chem.},
+year = {2005},
+volume = {26},
+number = {16},
+pages = {1781--1802}
+}
+
+@article{Bowers:2006:SAM:1188455.1188544,
+author = {Bowers, Kevin J and Chow, Edmond and Xu, Huafeng and Dror, Ron O and Eastwood, Michael P and Gregersen, Brent A. and Klepeis, John L and Kolossvary, Istvan and Moraes, Mark A and Sacerdoti, Federico D. and Salmon, John K and Shan, Yibing and Shaw, David E},
+title = {{Scalable algorithms for molecular dynamics simulations on commodity clusters}},
+journal = {Proceedings of the ACM/IEEE Conference on Supercomputing (SC06)},
+year = {2006},
+pages = {43--43},
+publisher = {IEEE},
+address = {New York, NY, USA},
+month = jul
+}
+
+@article{Voelz:2010tl,
+author = {Voelz, Vincent A. and Bowman, Gregory R. and Beauchamp, Kyle and Pande, Vijay S.},
+title = {{Molecular Simulation of ab Initio Protein Folding for a Millisecond Folder NTL9(1-39)}},
+journal = {J. Am. Chem. Soc.},
+volume = {132},
+number = {5},
+pages = {1526-1528},
+year = {2010},
+doi = {10.1021/ja9090353},
+URL = {http://pubs.acs.org/doi/abs/10.1021/ja9090353}
+}
+
+@article{Pearlman:1995wk,
+author = {Pearlman, D.A. and Case, D.A. and Caldwell, J.W. and Ross, W.S. and Cheatham, T.E. and Debolt, S and Ferguson, D and Seibel, G and Kollman, Peter A},
+title = {{AMBER, a package of computer programs for applying molecular mechanics, normal mode analysis, molecular dynamics and free energy calculations to simulate the structural and energetic properties of molecules}},
+journal = {Comput. Phys. Commun.},
+year = {1995},
+volume = {91},
+number = {1},
+pages = {1--41}
+}
+
+@article{Krivov:2004kk,
+author = {Krivov, Sergei V and Karplus, Martin},
+title = {{Hidden complexity of free energy surfaces for peptide (protein) folding.}},
+journal = {Proc. Natl. Acad. Sci. U.S.A.},
+year = {2004},
+volume = {101},
+number = {41},
+pages = {14766--14770},
+month = oct
+}
+
+@article{Bowman:2010vc,
+author = {Bowman, Gregory R and Ensign, Daniel L and Pande, Vijay S},
+title = {{Enhanced modeling via network theory: adaptive sampling of Markov state models}},
+journal = {J. Chem. Theory Comput.},
+year = {2010},
+volume = {6},
+number = {3},
+pages = {787--794},
+month = mar
+}
+
+@article{Kasson:2010ul,
+  author = {Kasson, Peter M. AND Lindahl, Erik AND Pande, Vijay S.},
+  journal = {PLoS Comput. Biol.},
+  publisher = {Public Library of Science},
+  title = {Atomic-resolution simulations predict a transition state for vesicle fusion defined by contact of a few lipid tails},
+  year = {2010},
+  month = {06},
+  volume = {6},
+  url = {http://dx.doi.org/10.1371%2Fjournal.pcbi.1000829},
+  pages = {e1000829},
+  number = {6},
+  doi = {10.1371/journal.pcbi.1000829}
+}
+
+@article{Zhuang:2011vk,
+author = {Zhuang, Wei and Cui, Raymond Z. and Silva, Daniel-Adriano and Huang, Xuhui},
+title = {Simulating the T-jump-triggered unfolding dynamics of trpzip2 peptide and its time-resolved IR and two-dimensional IR signals using the Markov state model approach},
+journal = {J. Phys. Chem. B},
+volume = {115},
+number = {18},
+pages = {5415-5424},
+year = {2011},
+doi = {10.1021/jp109592b},
+URL = {http://pubs.acs.org/doi/abs/10.1021/jp109592b}
+}
+
+@article{Matsumoto:2002km,
+author = {Matsumoto, Masakazu and Saito, Shinji and Ohmine, Iwao},
+title = {{Molecular dynamics simulation of the ice nucleation and growth process leading to water freezing}},
+journal = {Nature},
+year = {2002},
+volume = {416},
+number = {6879},
+pages = {409--413},
+month = mar
+}
+
+@article{Pande:2010vf,
+title = "Everything you wanted to know about Markov state models but were afraid to ask",
+journal = "Methods",
+volume = "52",
+number = "1",
+pages = "99 - 105",
+year = "2010",
+issn = "1046-2023",
+doi = "10.1016/j.ymeth.2010.06.002",
+url = "http://www.sciencedirect.com/science/article/pii/S1046202310001568",
+author = "Vijay S. Pande and Kyle Beauchamp and Gregory R. Bowman",
+keywords = "Protein folding",
+keywords = "Markov State Models",
+keywords = "Computer simulation",
+keywords = "Distributed computing",
+keywords = "Molecular dynamics"
+}
+
+
+@article{Klepeis:2009hl,
+author = {Klepeis, John L and Lindorff-Larsen, Kresten and Dror, Ron O and Shaw, David E},
+title = {{Long-timescale molecular dynamics simulations of protein structure and function.}},
+journal = {Curr. Opin. Struct. Biol.},
+year = {2009},
+volume = {19},
+number = {2},
+pages = {120--127},
+month = apr
+}
+
+@article{Bowman:2012wg,
+author = {Bowman, Gregory R},
+title = {Improved coarse-graining of Markov state models via explicit consideration of statistical uncertainty},
+journal = {J. Chem. Phys.},
+year = {2012},
+volume = {137},
+issue = {13},
+pages = {134111},
+url = {http://dx.doi.org/10.1063/1.4755751},
+}
+
+@article{Beauchamp:2012kp,
+author = {Beauchamp, Kyle A. and McGibbon, Robert and Lin, Yu-Shan and Pande, Vijay S.}, 
+title = {Simple few-state models reveal hidden complexity in protein folding},
+volume = {109}, 
+number = {44}, 
+pages = {17807-17813}, 
+year = {2012}, 
+doi = {10.1073/pnas.1201810109}, 
+URL = {http://www.pnas.org/content/109/44/17807.abstract}, 
+journal = {Proc. Natl. Acad. Sci. U.S.A.},
+}
+
+@article{Shen:2010df,
+author = {Shen, Chunhua and Kim, Junae and Wang, Lei},
+title = {{Scalable large-margin Mahalanobis distance metric learning.}},
+journal = {IEEE Trans. Neural Networks},
+year = {2010},
+volume = {21},
+number = {9},
+pages = {1524--1530},
+}
+
+
+@article{Wagstaff:2001to,
+  author    = {Kiri Wagstaff and
+               Claire Cardie and
+               Seth Rogers and
+               Stefan Schr{\"o}dl},
+  title     = {Constrained K-means Clustering with Background Knowledge},
+  journal = {Proceedings of the Eighteenth International Conference on Machine Learning},
+  volume = {18},
+  year      = {2001},
+  pages     = {577-584},
+  crossref  = {DBLP:conf/icml/2001},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@article{Deuflhard:2005cp,
+author = {Deuflhard, Peter and Weber, Marcus},
+title = {{Robust Perron cluster analysis in conformation dynamics}},
+journal = {Linear Algebra Appl.},
+year = {2005},
+volume = {398},
+pages = {161--184},
+month = {mar}
+}
+
+@article{Park:2006wk,
+author = {Sanghyun Park and Vijay S. Pande},
+collaboration = {},
+title = {Validation of Markov state models using Shannon's entropy},
+publisher = {AIP},
+year = {2006},
+journal = {J. Chem. Phys.},
+volume = {124},
+number = {5},
+eid = {054118},
+numpages = {5},
+pages = {054118},
+keywords = {Markov processes; entropy; kinetic theory},
+url = {http://link.aip.org/link/?JCP/124/054118/1},
+doi = {10.1063/1.2166393}
+}
+
+
+@article{Hinrichs:2007ub,
+author = {Nina Singhal Hinrichs and Vijay S. Pande},
+collaboration = {},
+title = {Calculation of the distribution of eigenvalues and eigenvectors in Markovian state models for molecular dynamics},
+publisher = {AIP},
+year = {2007},
+journal = {J. Chem. Phys.},
+volume = {126},
+number = {24},
+eid = {244101},
+numpages = {11},
+pages = {244101},
+keywords = {proteins; eigenvalues and eigenfunctions; molecular biophysics; molecular dynamics method},
+url = {http://link.aip.org/link/?JCP/126/244101/1},
+doi = {10.1063/1.2740261}
+}
+
+@article{Voelz:2012jb,
+author = {Voelz, Vincent A. and J\:{a}ger, Marcus and Yao, Shuhuai and Chen, Yujie and Zhu, Li and Waldauer, Steven A. and Bowman, Gregory R. and Friedrichs, Mark and Bakajin, Olgica and Lapidus, Lisa J. and Weiss, Shimon and Pande, Vijay S.},
+title = {Slow unfolded-state structuring in Acyl-CoA binding protein folding revealed by simulation and experiment},
+journal = {J. Am. Chem. Soc.},
+volume = {134},
+number = {30},
+pages = {12565-12577},
+year = {2012},
+doi = {10.1021/ja302528z},
+URL = {http://pubs.acs.org/doi/abs/10.1021/ja302528z}
+}
+
+@article{Bowman:2009vx,
+author = {Bowman, Gregory R and Beauchamp, Kyle and Boxer, SG and Pande, Vijay S},
+title = {{Progress and challenges in the automated construction of Markov state models for full protein systems}},
+journal = {J. Chem. Phys.},
+year = {2009},
+volume = {131},
+issue = {12},
+page = {124101},
+}
+
+@article{LindorffLarsen:2011gl,
+author = {Lindorff-Larsen, Kresten and Piana, Stefano and Dror, Ron O and Shaw, David E},
+title = {{How fast-folding proteins fold.}},
+journal = {Science},
+year = {2011},
+volume = {334},
+number = {6055},
+pages = {517--520},
+month = oct
+}
+
+@article{Shaw2010,
+author = {Shaw, D. E. and Maragakis, P. and Lindorff-Larsen, K and Piana, S. and Dror, R. O. and Eastwood, M. P. and Bank, J. A. and Jumper, J. M. and Salmon, J. K and Shan, Y. and Wriggers, W.},
+title={Atomic-level characterization of the structural dynamics of proteins},
+journal={Science},
+year={2010},
+volume={330},
+number={6002},
+pages={341--346}
+}
+
+@article{Bowman:2009wj,
+title = "Using generalized ensemble simulations and Markov state models to identify conformational states",
+journal = "Methods",
+volume = "49",
+number = "2",
+pages = "197 - 201",
+year = "2009",
+issn = "1046-2023",
+doi = "10.1016/j.ymeth.2009.04.013",
+url = "http://www.sciencedirect.com/science/article/pii/S1046202309000978",
+author = "Gregory R. Bowman and Xuhui Huang and Vijay S. Pande",
+keywords = "Clustering",
+keywords = "Molecular dynamics",
+keywords = "Thermodynamics",
+keywords = "Kinetics"
+}
+
+@article{Xing:2002u,
+  author = {Eric P. Xing and Andrew Y. Ng and Michael I. Jordan and Stuart Russell},
+  title = {Distance metric learning, with application to clustering with side-information},
+  journal = {Advances in Neural Information Processing Systems (NIPS)},
+  year = {2002},
+  volume = {15},
+  pages = {505--512},
+  publisher = {MIT Press}
+}
+
+@article{Weber:2011tr,
+author = {Weber, Jeffrey K. and Pande, Vijay S.},
+title = {Characterization and rapid sampling of protein folding Markov state model topologies},
+journal = {J. Chem. Theory Comput.},
+volume = {7},
+number = {10},
+pages = {3405-3411},
+year = {2011},
+doi = {10.1021/ct2004484},
+URL = {http://pubs.acs.org/doi/abs/10.1021/ct2004484}
+}
+
+
+@article{Gilson:2007ur,
+author = {Gilson, MK and  Zhou, Huan-Xiang},
+title = {Calculation of Protein-Ligand Binding Affinities},
+journal = {Annu. Rev. Biophys. Biomol. Struct.},
+year = {2007},
+volume = {36},
+pages = {21-42},
+}
+
+@article{Hansson:2002vn,
+author = {Hansson, Tomas and Oostenbrink, Chris and van Gunsteren, WilfredF},
+title = {{Molecular dynamics simulations.}},
+journal = {Curr. Opp. Struct. Biol.},
+year = {2002},
+volume = {12},
+number = {2},
+pages = {190--196},
+month = apr
+}
+
+@article{Buchete:2008wv,
+author = {Buchete, Nicolae-Viorel and Hummer, Gerhard},
+title = {Coarse Master Equations for Peptide Folding Dynamics†},
+journal = {J. Phys. Chem. B},
+volume = {112},
+number = {19},
+pages = {6057-6069},
+year = {2008},
+doi = {10.1021/jp0761665},
+URL = {http://pubs.acs.org/doi/abs/10.1021/jp0761665}
+}
+
+@article{Beauchamp:2011ey,
+author = {Beauchamp, Kyle A. and Ensign, Daniel L and Das, Rhiju and Pande, Vijay S},
+title = {{Quantitative comparison of villin headpiece subdomain simulations and triplet-triplet energy transfer experiments.}},
+journal = {Proc. Natl. Acad. Sci. U.S.A.},
+year = {2011},
+volume = {108},
+number = {31},
+pages = {12734--12739},
+month = aug
+}
+
+@article{Bowman:2011bc,
+author = {Bowman, Gregory R and Voelz, Vincent A and Pande, Vijay S},
+title = {{Taming the complexity of protein folding.}},
+journal = {Curr. Opin. Struct. Biol.},
+year = {2011},
+volume = {21},
+number = {1},
+pages = {4--11},
+month = feb
+}
+
+@article{Chodera:2007tw,
+author = {Chodera, J. and  Swope, W. and  Pitera, J. and  Dill, K.},
+title = {Long-time protein folding dynamics from short-time molecular dynamics simulations},
+journal = {Multiscale Model. Simul.},
+volume = {5},
+number = {4},
+pages = {1214-1226},
+year = {2006},
+doi = {10.1137/06065146X},
+URL = {http://epubs.siam.org/doi/abs/10.1137/06065146X}
+}
+
+@article{Lapelosa:2012bd,
+author = {Lapelosa, Mauro and Gallicchio, Emilio and Levy, Ronald M},
+title = {{Conformational transitions and convergence of absolute binding free energy calculations}},
+journal = {J. Chem. Theory Comput.},
+year = {2012},
+volume = {8},
+number = {1},
+pages = {47--60},
+month = jan
+}
+
+@article{Noe:2009tp,
+author = {{No\'{e}, Frank and Sch\"{u}tte, Christof and Vanden-Eijnden, Eric and Reich, Lothar and Weikl, Thomas R.}}, 
+title = {Constructing the equilibrium ensemble of folding pathways from short off-equilibrium simulations},
+volume = {106}, 
+number = {45}, 
+pages = {19011-19016}, 
+year = {2009}, 
+doi = {10.1073/pnas.0905466106}, 
+abstract ={Characterizing the equilibrium ensemble of folding pathways, including their relative probability, is one of the major challenges in protein folding theory today. Although this information is in principle accessible via all-atom molecular dynamics simulations, it is difficult to compute in practice because protein folding is a rare event and the affordable simulation length is typically not sufficient to observe an appreciable number of folding events, unless very simplified protein models are used. Here we present an approach that allows for the reconstruction of the full ensemble of folding pathways from simulations that are much shorter than the folding time. This approach can be applied to all-atom protein simulations in explicit solvent. It does not use a predefined reaction coordinate but is based on partitioning the state space into small conformational states and constructing a Markov model between them. A theory is presented that allows for the extraction of the full ensemble of transition pathways from the unfolded to the folded configurations. The approach is applied to the folding of a PinWW domain in explicit solvent where the folding time is two orders of magnitude larger than the length of individual simulations. The results are in good agreement with kinetic experimental data and give detailed insights about the nature of the folding process which is shown to be surprisingly complex and parallel. The analysis reveals the existence of misfolded trap states outside the network of efficient folding intermediates that significantly reduce the folding speed.}, 
+URL = {http://www.pnas.org/content/106/45/19011.abstract}, 
+journal = {Proc. Natl. Acad. Sci. U.S.A.} 
+}
+
+@article{Schutte:2012dn,
+author = {Djurdjevac, N. and Sarich, M. and Sch\"{u}tte, Christof},
+title = {Estimating the eigenvalue error of Markov state models},
+journal = {Multiscale Model. Simul.},
+volume = {10},
+number = {1},
+pages = {61-81},
+year = {2012},
+doi = {10.1137/100798910},
+URL = {http://epubs.siam.org/doi/abs/10.1137/100798910}
+}
+
+@article{Friedrichs:2009ul,
+author = {Friedrichs, M.S. and Eastman, P and Vaidyanathan, V and Houston, M and Legrand, S and Beberg, A.L. and Ensign, D L and Bruns, C.M. and Pande, V S},
+title = {{Accelerating molecular dynamic simulation on graphics processing units}},
+journal = {J. Comput. Chem.},
+year = {2009},
+volume = {30},
+number = {6},
+pages = {864--872}
+}
+
+@article{Allen2001:hr,
+author = {Allen, F and Almasi, G and Andreoni, W and Beece, D and Berne, B J and Bright, A and Brunheroto, J and Cascaval, C and Castanos, J and Coteus, P and Crumley, P and Curioni, A and Denneau, M and Donath, W and Eleftheriou, M and Flitch, B and Fleischer, B and Georgiou, C J and Germain, R and Giampapa, M and Gresh, D and Gupta, M and Haring, R and Ho, H and Hochschild, P and Hummel, S and Jonas, T and Lieber, D and Martyna, G and Maturu, K and Moreira, J and Newns, D and Newton, M and Philhower, R and Picunko, T and Pitera, J and Pitman, M and Rand, R and Royyuru, A and Salapura, V and Sanomiya, A and Shah, R and Sham, Y and Singh, S and Snir, M and Suits, F and Swetz, R and Swope, W C and Vishnumurthy, N and Ward, T J C and Warren, H and Zhou, R},
+title = {{Blue Gene: A vision for protein science using a petaflop supercomputer}},
+journal = {IBM Syst. J.},
+year = {2001},
+volume = {40},
+number = {2},
+pages = {310--327},
+month = jul
+}
+
+@article{10.1371/journal.pcbi.1000415,
+    author = {Prada-Gracia, Diego AND G\'{o}mez-Garde\~{n}es, Jes\'{u}s AND Echenique, Pablo AND Falo, Fernando},
+    journal = {PLoS Comput. Biol.},
+    publisher = {Public Library of Science},
+    title = {Exploring the free energy landscape: from dynamics to networks and back},
+    year = {2009},
+    month = {06},
+    volume = {5},
+    url = {http://dx.doi.org/10.1371%2Fjournal.pcbi.1000415},
+    pages = {e1000415},
+    abstract = {<title>Author Summary</title>
+<p>A complete description of complex polymers, such as proteins, includes information about their structure and their dynamics. In particular it is of utmost importance to answer the following questions: What are the structural conformations possible? Is there any relevant hierarchy among these conformers? What are the transition paths between them? These and other questions can be addressed by analyzing in an efficient way the Free Energy Landscape of the system. With this knowledge, several problems about biomolecular reactions (such as enzymatic activity, protein folding, protein deposition diseases, etc.) can be tackled. In this article we show how to efficiently describe the Free Energy Landscape for small and large peptides. By mapping the trajectories of molecular dynamics simulations into a graph (the Conformational Markov Network) and unveiling its structural organization, we obtain a coarse grained description of the protein dynamics across the Free Energy Landscape in terms of the relevant kinetic magnitudes of the system. Therefore, we show the way to bridge the gap between the microscopic dynamics and the macroscopic kinetics by means of a mesoscopic description of the associated Conformational Markov Network. Along this path the compromise between the physical nature of the process and the magnitudes that characterize the network is carefully kept to assure the reliability of the results shown.</p>
+},
+    number = {6},
+    doi = {10.1371/journal.pcbi.1000415}
+}        
+
+
+
+
+@article{Carr2005,
+author = {Carr, Joanne M and Wales, David J.},
+title = {{Globals optimization and folding pathways of selected alpha-helical proteins}},
+journal = {J. Chem. Phys.},
+volume = {123},
+issue = {23},
+year = {2005},
+pages = {234901},
+}
+
+@article{Carr2008,
+author = {Carr, Joanne M. and Wales, David J.},
+title = {{Folding pathways and rates for the three-Stranded beta-sheet peptide Beta3s using discrete path sampling}},
+year = {2008},
+journal = {J. Phys. Chem. B},
+volume = {112},
+pages = {8760--8769},
+}
+
+@article{Lane:2011wj,
+author = {Lane, Thomas J and Bowman, Gregory R and Beauchamp, Kyle and Voelz, Vincent A and Pande, Vijay S},
+title = {{Markov state model reveals folding and functional dynamics in ultra-long MD trajectories}},
+journal = {J. Am. Chem. Soc.},
+year = {2011},
+volume = {133},
+number = {45},
+pages = {18413--18419},
+month = nov
+}
+
+@article{Huang:2010tl,
+author = {Huang, Xuhui and Yao, Yuan and Bowman, Gregory R and Sun, Jian and Guibas, Leonidas J and Carlsson, Gunnar and Pande, Vijay S},
+title = {{Constructing multi-resolution markov state models (msms) to elucidate RNA hairpin folding mechanisms.}},
+journal = {Pac. Symp. Biocomput.},
+year = {2010},
+pages = {228--239},
+volume = {15},
+}
+
+@article{Noe:2008td,
+author = {No\'{e}, F and Fischer, Stefan},
+title = {{Transition networks for modeling the kinetics of conformational change in macromolecules}},
+journal = {Curr. Opp. Struct. Biol.},
+year = {2008},
+volume = {18},
+issue = {2},
+pages = {54--162},
+}
+
+@article{Keller:2010ir,
+author = {Keller, Bettina and Daura, Xavier and van Gunsteren, Wilfred F},
+title = {{Comparing geometric and kinetic cluster algorithms for molecular simulation data.}},
+journal = {J. Chem. Phys.},
+year = {2010},
+volume = {132},
+number = {7},
+pages = {074110},
+month = feb
+}
+
+@article{Deuflhard:2000up,
+title = "Identification of almost invariant aggregates in reversible nearly uncoupled Markov chains",
+author = {P. Deuflhard and W. Huisinga and A. Fischer and Ch. Sc\"{u}tte},
+journal = "Linear Algebra Appl.",
+volume = "315",
+number = "1â€“3",
+pages = "39 - 59",
+year = "2000",
+issn = "0024-3795",
+doi = "10.1016/S0024-3795(00)00095-1",
+url = {http://www.sciencedirect.com/science/article/pii/S0024379500000951},
+}
+
+
+@article{Pronk:2011wc, 
+author={Pronk, S. and Larsson, P. and Pouya, I. and Bowman, G.R. and Haque, I.S. and Beauchamp, K. and Hess, B. and Pande, V.S. and Kasson, P.M. and Lindahl, E.}, 
+journal={International Conference for High Performance Computing, Networking, Storage and Analysis (SC11)},
+title={Copernicus: A new paradigm for parallel adaptive molecular dynamics}, 
+year={2011}, 
+pages={1-10},   
+keywords={bioinformatics;message passing;molecular dynamics method;multi-threading;parallel processing;pattern clustering;proteins;resource allocation;statistical analysis;AMD cores;Copernicus;SIMD;automatic resource allocation;biomolecular simulation;kinetic clustering;message-passing;parallel adaptive molecular dynamics;performance-leading molecular dynamics;protein;real-time result monitoring;statistical model building;supercomputer;threads;villin;Adaptation models;Biological system modeling;Computational modeling;Computer architecture;Markov processes;Proteins;Servers},
+}
+
+@article{Sarich:2010wa,
+author = {{Sarich, M. and No\'{e}, F. and Sch\"{u}tte, C.}},
+title = {On the approximation quality of Markov state models},
+journal = {Multiscale Model. Simul.},
+volume = {8},
+number = {4},
+pages = {1154-1177},
+year = {2010},
+doi = {10.1137/090764049},
+URL = {http://epubs.siam.org/doi/abs/10.1137/090764049}
+}
+
+
+@article{Beauchamp:2011he,
+author = {Beauchamp, Kyle A. and Bowman, Gregory R and Lane, Thomas J and Maibaum, Lutz and Haque, Imran S and Pande, Vijay S},
+title = {{MSMBuilder2: modeling conformational dynamics on the picosecond to millisecond scale}},
+journal = {J. Chem. Theory Comput.},
+year = {2011},
+volume = {7},
+number = {10},
+pages = {3412--3419}
+}
+
+
+@unpublished{Schwantes2013Optimal,
+author = "Schwantes, C. R. and McGibbon, R. T.  and Pande, V. S.", 
+title = "Optimal Parameter Selection in Markov State Models for Biomolecular Conformational Dynamics",
+note = "in preparation",
+year = {2013}
+}
+
+@article{Rabiner1986Introduction,
+  title={An introduction to hidden Markov models},
+  author={Rabiner, Lawrence and Juang, B},
+  journal={ASSP Magazine, IEEE},
+  volume={3},
+  number={1},
+  pages={4--16},
+  year={1986},
+  publisher={IEEE}
+}
+
+@article{Bowman2010Enhanced,
+author = {Bowman, Gregory R. and Ensign, Daniel L. and Pande, Vijay S.},
+title = {Enhanced Modeling via Network Theory: Adaptive Sampling of Markov State Models},
+journal = {J. Chem. Theory Comput.},
+volume = {6},
+number = {3},
+pages = {787-794},
+year = {2010},
+doi = {10.1021/ct900620b},
+URL = {http://pubs.acs.org/doi/abs/10.1021/ct900620b}
+}
+
+@article{Kubelka2006Sub,
+  title={Sub-microsecond protein folding},
+  author={Kubelka, Jan and Chiu, Thang K and Davies, David R and Eaton, William A and Hofrichter, James},
+  journal={J. Mol. Biol.},
+  volume={359},
+  number={3},
+  pages={546--553},
+  year={2006},
+  publisher={Elsevier}
+}
+
+@article{Weber2011Characterization,
+author = {Weber, Jeffrey K. and Pande, Vijay S.},
+title = {Characterization and Rapid Sampling of Protein Folding Markov State Model Topologies},
+journal = {Journal of Chemical Theory and Computation},
+volume = {7},
+number = {10},
+pages = {3405-3411},
+year = {2011},
+doi = {10.1021/ct2004484},
+URL = {http://pubs.acs.org/doi/abs/10.1021/ct2004484}
+}
+
+
+@article{Hamilton1990Analysis,
+  title={Analysis of time series subject to changes in regime},
+  author={Hamilton, James D},
+  journal={J. Econometrics},
+  volume={45},
+  number={1},
+  pages={39--70},
+  year={1990},
+  publisher={Elsevier},
+  url={http://dx.doi.org/10.1016/0304-4076(90)90093-9}
+}
+
+@article{Hamilton1989New,
+  title={A new approach to the economic analysis of nonstationary time series and the business cycle},
+  author={Hamilton, James D},
+  journal={Econometrica},
+  pages={357--384},
+  year={1989},
+  publisher={JSTOR},
+  url={http://dx.doi.org/10.2307/1912559}
+}

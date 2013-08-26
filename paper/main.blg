@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d (TeX Live 2011)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: apsrev4-1.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: mainNotes.bib
+Database file #2: bibliography.bib
+A bad cross reference---entry "Shen:2008aa"
+refers to entry "DBLP:conf/nips/2008", which doesn't exist
+Warning--I didn't find a database entry for "DBLP:conf/nips/2008"
+control{REVTEX41Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{N/A}, control.pages{N/A}, control.year{N/A}, control.eprint{N/A}, 
+control{apsrev41Control}, control.key{N/A}, control.author{08}, control.editor{1}, control.title{}, control.pages{0}, control.year{1}, control.eprint{N/A}, 
+Warning--jnrlst (dependency: not reversed) set 1
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+Control: key (0) 
+Control: author (8) initials jnrlst
+Control: editor formatted (1) identically to author
+Control: production of article title (-1) disabled
+Control: page (0) single
+Control: year (1) truncated
+Control: production of eprint (0) enabled
+You've used 43 entries,
+            5847 wiz_defined-function locations,
+            1947 strings with 25243 characters,
+and the built_in function-call counts, 45089 in all, are:
+= -- 2650
+> -- 1384
+< -- 336
++ -- 432
+- -- 357
+* -- 7282
+:= -- 4276
+add.period$ -- 42
+call.type$ -- 43
+change.case$ -- 168
+chr.to.int$ -- 53
+cite$ -- 43
+duplicate$ -- 4216
+empty$ -- 3255
+format.name$ -- 805
+if$ -- 8959
+int.to.chr$ -- 2
+int.to.str$ -- 50
+missing$ -- 558
+newline$ -- 175
+num.names$ -- 123
+pop$ -- 1726
+preamble$ -- 1
+purify$ -- 205
+quote$ -- 0
+skip$ -- 1537
+stack$ -- 0
+substring$ -- 959
+swap$ -- 4133
+text.length$ -- 170
+text.prefix$ -- 0
+top$ -- 10
+type$ -- 631
+warning$ -- 1
+while$ -- 129
+width$ -- 0
+write$ -- 378
+(There was 1 error message)
