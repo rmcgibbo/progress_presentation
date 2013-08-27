@@ -2,7 +2,7 @@
 % subtitle: Second Year Progress Report
 % author: Robert McGibbon
 % author: August 27, 2013
-% thankyou: Questions?
+% thankyou: More Questions?
 % thankyou_details: Thanks especially to Vijay, Christian S., TJ L. and Kyle B.
 % contact: <span>www</span> <a href="http://rmcgibbo.appspot.com/">website</a>
 % contact: <span>github</span> <a href="https://github.com/rmcgibbo">rmcgibbo</a>
