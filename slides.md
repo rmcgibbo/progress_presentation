@@ -23,7 +23,7 @@ dsubtitle: Three Parts
 - Improving Markov state model construction with large-margin metric learning
 - Current projects and future directions:
     - Adaptive sampling
-    - Model selection
+    - Statistical selection
     - Richer model classes
     
 ---
@@ -249,22 +249,22 @@ subtitle: MSM-accelerated Distributed Molecular Dynamics
 
 <footer class="source">Simulations and video by M. P. Harrigan</footer>
 
----
-title: Current Projects
-subtitle: Hierarchical Bayesian Mutant Sampling
+<!-- --- -->
+<!-- title: Current Projects -->
+<!-- subtitle: Hierarchical Bayesian Mutant Sampling -->
 
-<div style="margin-top:-120px; float:right;">
-<img width=400 src="figures/cayley.png" /><br/>
-<img width=400 src="figures/information_gain.png" /> 
-</div>
+<!-- <div style="margin-top:-120px; float:right;"> -->
+<!-- <img width=400 src="figures/cayley.png" /><br/> -->
+<!-- <img width=400 src="figures/information_gain.png" />  -->
+<!-- </div> -->
 
-- Informative prior on the mutant based on simulations of the wild-type
-$$\vec{p}_i^{M} \sim \operatorname{Dir}(q_i \cdot \vec{c}_i^{WT} + 1/2) $$
-- Where $q_i$ models info. transfer between wild-type and mutant states $i$
-  with hyperprior: $q_i \sim \text{Beta}(\alpha, \beta)$
-- Per-state expected information gain is semi-analytically solvable
+<!-- - Informative prior on the mutant based on simulations of the wild-type -->
+<!-- $$\vec{p}_i^{M} \sim \operatorname{Dir}(q_i \cdot \vec{c}_i^{WT} + 1/2) $$ -->
+<!-- - Where $q_i$ models info. transfer between wild-type and mutant states $i$ -->
+  <!-- with hyperprior: $q_i \sim \text{Beta}(\alpha, \beta)$ -->
+<!-- - Per-state expected information gain is semi-analytically solvable -->
 
-<footer class="source">McGibbon, R.T.; Pande, V. S., <i>in preparation</i></footer>
+<!-- <footer class="source">McGibbon, R.T.; Pande, V. S., <i>in preparation</i></footer> -->
 
 ---
 title: Current Projects
