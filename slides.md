@@ -44,7 +44,32 @@ title: Biology at the Atomic Length Scale
 </center>
 
 <footer class="source">
-G.R Mallacci et. al., <i>Brain</i> 122, 1823 (1999).
+G.R Mallucci et. al., <i>Brain</i> 122, 1823 (1999).
+</footer>
+
+---
+title: Experiments Can't Do It Alone
+
+<center style="margin-top:-20px">
+<img height=230 src="figures/1-s2.0-S0022283697914546-gr9b.gif"/>
+<img height=230 src="figures/F4.large.jpg"/>
+<img height=230 src="figures/nmeth1010-775c-F1.jpg"/>
+<br/>
+<img height=230 src="figures/1-s2.0-S0959440X03000113-gr4.gif"/>
+<img height=230 src="figures/xraydensity.jpg"/>
+<img height=230 src="figures/hd-exchange.jpg"/>
+<img height=230 src="figures/2dir.jpg"/>
+</center>
+
+<footer class="source">
+<div style="margin-top:-25px">
+S. Westenhoff et al., <i>Nature Methods</i> 7, 775 (2010). &nbsp; | &nbsp;
+G. Panick et al., <i> J. Mol. Biol. </i> 275 389 (1998)  &nbsp; | &nbsp;
+Y Li et al., <i>J. Biol. Chem.</i> 277 33018 (2002) <br/> 
+X. Zhuang; M. Rief, <i>Curr. Opin. Struct. Biol</i> 13 88 (2003) &nbsp; | &nbsp;
+J. J. Englander et al., <i> Proc. Natl. Acad. Sci. U.S.A. </i> 100 7057 (2003) <br/>
+I J. Finkelstein et al., <i> Proc. Natl. Acad. Sci. U.S.A. </i> 104 2637 (2007)
+</div>
 </footer>
 
 ---
@@ -57,37 +82,49 @@ title: Molecular Dynamics
 </div>
 </center>
 
-- Calculate the physical interactions in the system
+- Calculate the atomic-level physical interactions in the system
 - Numerically integrate the equations of motion
 
 <footer class="source">
 W. D. Cornell et. al., <i>J. Am. Chem. Soc.</i> 117, 5179 (1995).
 </footer>
 
+
+
+
+<!-- --- -->
+<!-- title: MD Datasets are Large -->
+<!-- subtitle: First world problems -->
+
+<!-- <center> -->
+<!-- <img height=200 src="figures/5348951193_b53fa19c23.jpg"/> -->
+<!-- <img width=250 style="margin-left:20px; margin-right:20px" src="figures/TitanNew-bg.jpg"/> -->
+<!-- <img height=200 src="figures/folding-mosaic.jpg"/> -->
+<!-- </center> -->
+
+<!-- - $100 \frac{\text{ns}}{\text{day } \cdot \text{ GPU}} \cdot 500 \text{ GPUs} \cdot 1 \text{ week} = 350 \text{ $\mu$s}$ -->
+<!-- - Storing the positions every 200 ps, this is a $\sim$ 1 TB dataset -->
+
 ---
-title: MD Datasets are Large
-subtitle: First world problems
+title: Predictive and Interpretable Models from Atomic-level Simulations
 
-<center>
-<img height=200 src="figures/5348951193_b53fa19c23.jpg"/>
-<img width=250 style="margin-left:20px; margin-right:20px" src="figures/TitanNew-bg.jpg"/>
-<img height=200 src="figures/folding-mosaic.jpg"/>
-</center>
-
-- $100 \frac{\text{ns}}{\text{day } \cdot \text{ GPU}} \cdot 500 \text{ GPUs} \cdot 1 \text{ week} = 350 \text{ $\mu$s}$
-- Storing the positions every 200 ps, this is a $\sim$ 1 TB dataset
-
----
-title: Goal: Predictive and Interpretable Models from Atomic-level Simulations
-build_lists: true
+<div style="margin-top:-30px; float:right">
+<img height=200 src="figures/msm-network.gif"/>
+</div>
 
 - What are the relevant conformational states?
-    - Voronoi tessellation of conformation space
+    - Model: voronoi tessellation of conformation space
     - $s_i = \lbrace x \in \Omega : d(x, y_i) \lt d(x, y_j) \;\forall\; j \in S, j \neq i \rbrace $
 
 - What are the characteristic dynamics between them?
-    - Markovian through state space
+    - Model: Markovian through state space
     - $P(s_t | s_{t-1}, s_{t-2}, \ldots) = P(s_t | s_{t-1})$
+
+<footer class="source">
+<div style="margin-top:30px">
+V. A. Voelz et. al, <i> J. Am. Chem. Soc.</i> 132 1526 (2010)
+</div>
+</footer>
 
 ---
 title: Improving Markov State Model Construction

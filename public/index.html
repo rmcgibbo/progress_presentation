@@ -110,7 +110,36 @@ URL: https://code.google.com/p/io-2012-slides
 <img width=500 src="figures/Alanine-Valine.png"/>
 </center></p>
 <footer class="source">
-G.R Mallacci et. al., <i>Brain</i> 122, 1823 (1999).
+G.R Mallucci et. al., <i>Brain</i> 122, 1823 (1999).
+</footer></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Experiments Can't Do It Alone</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><center style="margin-top:-20px">
+<img height=230 src="figures/1-s2.0-S0022283697914546-gr9b.gif"/>
+<img height=230 src="figures/F4.large.jpg"/>
+<img height=230 src="figures/nmeth1010-775c-F1.jpg"/>
+<br/>
+<img height=230 src="figures/1-s2.0-S0959440X03000113-gr4.gif"/>
+<img height=230 src="figures/xraydensity.jpg"/>
+<img height=230 src="figures/hd-exchange.jpg"/>
+<img height=230 src="figures/2dir.jpg"/>
+</center></p>
+<footer class="source">
+<div style="margin-top:-25px">
+S. Westenhoff et al., <i>Nature Methods</i> 7, 775 (2010). &nbsp; | &nbsp;
+G. Panick et al., <i> J. Mol. Biol. </i> 275 389 (1998)  &nbsp; | &nbsp;
+Y Li et al., <i>J. Biol. Chem.</i> 277 33018 (2002) <br/> 
+X. Zhuang; M. Rief, <i>Curr. Opin. Struct. Biol</i> 13 88 (2003) &nbsp; | &nbsp;
+J. J. Englander et al., <i> Proc. Natl. Acad. Sci. U.S.A. </i> 100 7057 (2003) <br/>
+I J. Finkelstein et al., <i> Proc. Natl. Acad. Sci. U.S.A. </i> 104 2637 (2007)
+</div>
 </footer></article>
  
 </slide>
@@ -128,55 +157,66 @@ G.R Mallacci et. al., <i>Brain</i> 122, 1823 (1999).
 </div>
 </center></p>
 <ul>
-<li>Calculate the physical interactions in the system</li>
+<li>Calculate the atomic-level physical interactions in the system</li>
 <li>Numerically integrate the equations of motion</li>
 </ul>
 <footer class="source">
 W. D. Cornell et. al., <i>J. Am. Chem. Soc.</i> 117, 5179 (1995).
-</footer></article>
+</footer>
+
+<!-- --- -->
+
+<!-- title: MD Datasets are Large -->
+
+<!-- subtitle: First world problems -->
+
+<!-- <center> -->
+
+<!-- <img height=200 src="figures/5348951193_b53fa19c23.jpg"/> -->
+
+<!-- <img width=250 style="margin-left:20px; margin-right:20px" src="figures/TitanNew-bg.jpg"/> -->
+
+<!-- <img height=200 src="figures/folding-mosaic.jpg"/> -->
+
+<!-- </center> -->
+
+<!-- - $100 \frac{\text{ns}}{\text{day } \cdot \text{ GPU}} \cdot 500 \text{ GPUs} \cdot 1 \text{ week} = 350 \text{ $\mu$s}$ -->
+
+<!-- - Storing the positions every 200 ps, this is a $\sim$ 1 TB dataset --></article>
  
 </slide>
 
 <slide  >
   
     <hgroup>
-      <h2>MD Datasets are Large</h2>
-      <h3>First world problems</h3>
-    </hgroup>
-    <article ><p><center>
-<img height=200 src="figures/5348951193_b53fa19c23.jpg"/>
-<img width=250 style="margin-left:20px; margin-right:20px" src="figures/TitanNew-bg.jpg"/>
-<img height=200 src="figures/folding-mosaic.jpg"/>
-</center></p>
-<ul>
-<li>$100 \frac{\text{ns}}{\text{day } \cdot \text{ GPU}} \cdot 500 \text{ GPUs} \cdot 1 \text{ week} = 350 \text{ $\mu$s}$</li>
-<li>Storing the positions every 200 ps, this is a $\sim$ 1 TB dataset</li>
-</ul></article>
- 
-</slide>
-
-<slide  >
-  
-    <hgroup>
-      <h2>Goal: Predictive and Interpretable Models from Atomic-level Simulations</h2>
+      <h2>Predictive and Interpretable Models from Atomic-level Simulations</h2>
       <h3></h3>
     </hgroup>
-    <article ><ul class="build">
+    <article ><div style="margin-top:-30px; float:right">
+<img height=200 src="figures/msm-network.gif"/>
+</div>
+
+<ul>
 <li>
 <p>What are the relevant conformational states?</p>
-<ul class="build">
-<li>Voronoi tessellation of conformation space</li>
+<ul>
+<li>Model: voronoi tessellation of conformation space</li>
 <li>$s_i = \lbrace x \in \Omega : d(x, y_i) \lt d(x, y_j) \;\forall\; j \in S, j \neq i \rbrace $</li>
 </ul>
 </li>
 <li>
 <p>What are the characteristic dynamics between them?</p>
-<ul class="build">
-<li>Markovian through state space</li>
+<ul>
+<li>Model: Markovian through state space</li>
 <li>$P(s_t | s_{t-1}, s_{t-2}, \ldots) = P(s_t | s_{t-1})$</li>
 </ul>
 </li>
-</ul></article>
+</ul>
+<footer class="source">
+<div style="margin-top:30px">
+V. A. Voelz et. al, <i> J. Am. Chem. Soc.</i> 132 1526 (2010)
+</div>
+</footer></article>
  
 </slide>
 
